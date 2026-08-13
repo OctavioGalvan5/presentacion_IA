@@ -47,7 +47,6 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 14px; /* "zoom out" global — escala todo el rem */
 }
 
 body {
