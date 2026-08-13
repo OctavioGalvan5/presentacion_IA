@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial: Desarrollar una Mentalidad de Crecimiento</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style_v4.css">
+</head>
+<body>
+
+    <!-- Fondos de Efectos Neón y Partículas -->
+    <div class="ambient-glow">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Cabecera Principal (Sticky Header con Navegación) -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i data-lucide="cpu" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="logo-text"><span>Inteligencia Artificial</span></div>
+        </div>
+        
+        <ul class="header-nav">
+            <li><a href="#slide-cover" class="header-nav-link active">Inicio</a></li>
+            <li><a href="#slide-pyramid" class="header-nav-link">Conceptos</a></li>
+            <li><a href="#slide-history" class="header-nav-link">Historia</a></li>
+            <li><a href="#slide-chaos" class="header-nav-link">Gobernanza</a></li>
+            <li><a href="#slide-regulation" class="header-nav-link">Regulación</a></li>
+            <li><a href="#slide-usecases" class="header-nav-link">Casos</a></li>
+            <li><a href="#slide-practical-intro" class="header-nav-link">Práctica</a></li>
+        </ul>
+
+        <div class="header-meta">
+            <div class="slide-section-indicator">Introducción</div>
+            <button class="btn-notes-toggle">
+                <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+                Notas del Orador
+            </button>
+            <!-- Botón hamburguesa (solo mobile) -->
+            <button class="btn-mobile-menu" id="btn-mobile-menu" aria-label="Menú">
+                <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú móvil desplegable -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="#slide-cover" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="#slide-pyramid" class="mobile-nav-link">Conceptos</a></li>
+            <li><a href="#slide-history" class="mobile-nav-link">Historia</a></li>
+            <li><a href="#slide-chaos" class="mobile-nav-link">Gobernanza</a></li>
+            <li><a href="#slide-regulation" class="mobile-nav-link">Regulación</a></li>
+            <li><a href="#slide-usecases" class="mobile-nav-link">Casos de Uso</a></li>
+            <li><a href="#slide-practical-intro" class="mobile-nav-link">🎯 Práctica: Gemini</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenedor Principal (Flujo Vertical Natural) -->
+    <main>
+        
+        <!-- ==========================================
+             SLIDE 1: PORTADA
+             ========================================== -->
+        <section class="slide active" id="slide-cover" data-section="Introducción" data-source-slide="Slide 1 & 2 — Portada y Bio">
+            <div class="slide-cover-layout">
+                <div class="cover-badge">
+                    <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+                    Página de Presentación Interactiva
+                </div>
+                <h1 class="cover-title">Inteligencia Artificial: <span>Desarrollar una mentalidad de crecimiento</span></h1>
+                <p class="cover-subtitle">Explorando el ecosistema, los desafíos organizacionales, la regulación y el impacto práctico de la tecnología que está redefiniendo el futuro profesional.</p>
+                
+                <div class="bio-cards-container">
+                    <!-- Tarjeta Octavio -->
+                    <div class="bio-card" data-role="octavio" style="width: 100%;">
+                        <div class="bio-avatar">OG</div>
+                        <h3 class="bio-name">Octavio Galván</h3>
+                        <span class="bio-role">Abogado / Tecnólogo</span>
+                        <p class="bio-desc">Abogado especializado en tecnología, derecho digital y gobernanza de datos. Integración práctica y segura de herramientas cognitivas en el ejercicio profesional.</p>
+                        <span style="font-size: 0.72rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">* Presentación basada en los marcos conceptuales de Fredi Vivas</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Apertura de la Charla:</strong></p>
+                <ul>
+                    <li>Preséntate como Octavio Galván. Menciona tu perfil dual: abogado de formación pero apasionado por la tecnología y la IA.</li>
+                    <li>Explica que esta presentación no es un PowerPoint estático, sino una herramienta web interactiva, demostrando el mindset tecnológico en acción.</li>
+                    <li>Da crédito a Fredi Vivas (CEO RockingData) por proveer las bases y slides estructurales que utilizas para esta sesión.</li>
+                    <li>Plantea el objetivo: entender que la IA es una herramienta de productividad ("el nuevo Excel") y cómo gobernarla de forma segura en lugar de prohibirla.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 2: ECOSISTEMA (PIRÁMIDE)
+             ========================================== -->
+        <section class="slide" id="slide-pyramid" data-section="0. ¿Qué es la IA?" data-source-slide="Slide 29 — Ecosistema IA Generativa">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">0. ¿Qué es la IA?</span>
+                    <h2 class="slide-title">Ecosistema de la <span>IA Generativa</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="pyramid-widget">
+                    <!-- Contenedor Visual de la Pirámide -->
+                    <div class="pyramid-container">
+                        <div class="pyramid-tier" data-tier="5" style="--tier-width: 40%; --tier-bg: rgba(0, 102, 254, 0.05);">Tradicionales con IA</div>
+                        <div class="pyramid-tier" data-tier="4" style="--tier-width: 55%; --tier-bg: rgba(0, 102, 254, 0.10);">Apps Especializadas</div>
+                        <div class="pyramid-tier" data-tier="3" style="--tier-width: 70%; --tier-bg: rgba(0, 102, 254, 0.15);">Asistentes Multimodales</div>
+                        <div class="pyramid-tier" data-tier="2" style="--tier-width: 85%; --tier-bg: rgba(0, 102, 254, 0.20);">APIs y Frameworks</div>
+                        <div class="pyramid-tier" data-tier="1" style="--tier-width: 100%; --tier-bg: rgba(0, 102, 254, 0.25);">Modelos Fundacionales</div>
+                    </div>
+                    
+                    <!-- Panel de Detalle al hacer click -->
+                    <div class="pyramid-detail-panel">
+                        <span class="detail-tier-num" id="pyramid-tier-num">Nivel 1</span>
+                        <h3 class="detail-tier-title" id="pyramid-tier-title">Modelos Fundacionales</h3>
+                        <p class="detail-tier-desc" id="pyramid-tier-desc">Selecciona un nivel de la pirámide para explorar el ecosistema.</p>
+                        <span class="detail-examples-title">Ejemplos Clave:</span>
+                        <div class="detail-examples" id="pyramid-tier-examples">
+                            <!-- Generado por JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Concepto de Ecosistema:</strong></p>
+                <ul>
+                    <li>Usa la pirámide interactiva para explicar que la IA no es un monolito (e.g. ChatGPT no es toda la IA).</li>
+                    <li><strong>Nivel 1 (Base):</strong> Explica los LLMs entrenados con supercomputadoras (GPT-4, Claude, Llama). Es infraestructura cruda.</li>
+                    <li><strong>Nivel 2:</strong> Programadores que usan APIs para conectar modelos con datos (LangChain, bases vectoriales).</li>
+                    <li><strong>Nivel 3:</strong> Portales de consumo masivo como ChatGPT o Gemini conversacionales.</li>
+                    <li><strong>Nivel 4:</strong> Aplicaciones de nicho que resuelven una cosa muy bien (diseño con Midjourney, video con Synthesia).</li>
+                    <li><strong>Nivel 5 (Cúspide):</strong> Herramientas corporativas tradicionales que embeben IA (Copilot en Excel/Word, Photoshop con Firefly).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 3: CÍRCULOS ANIDADOS
+             ========================================== -->
+        <section class="slide" id="slide-nested-circles" data-section="0. ¿Qué es la IA?" data-source-slide="Slide 32 — Diagrama Círculos Anidados">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">0. ¿Qué es la IA?</span>
+                    <h2 class="slide-title">La IA como <span>Concepto Paraguas</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="nested-circles-widget">
+                    <!-- Visualizador de Círculos Concéntricos -->
+                    <div class="circles-visual">
+                        <div class="nested-circle circle-cs" data-circle="cs">Ciencias de la Computación</div>
+                        <div class="nested-circle circle-ai" data-circle="ai">Inteligencia Artificial</div>
+                        <div class="nested-circle circle-ml" data-circle="ml">Machine Learning</div>
+                        <div class="nested-circle circle-dl" data-circle="dl">Deep Learning</div>
+                        <div class="nested-circle circle-genai" data-circle="genai">Gen AI</div>
+                    </div>
+                    
+                    <!-- Panel de Definición -->
+                    <div class="circles-detail-panel">
+                        <h3 class="detail-tier-title" id="circle-detail-title">IA Generativa</h3>
+                        <p class="detail-tier-desc" id="circle-detail-desc">Haz clic en los diferentes círculos concéntricos para entender la jerarquía tecnológica.</p>
+                        <span class="detail-examples-title" id="circle-detail-source">Fuente</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Diferenciación de Términos (Fundamental para una audiencia corporativa/no-técnica):</strong></p>
+                <ul>
+                    <li>Explica la relación de inclusión matemática entre los términos:</li>
+                    <li><strong>IA</strong> es la categoría general de máquinas emulando inteligencia humana (nace en 1956).</li>
+                    <li><strong>Machine Learning</strong> es una rama de la IA basada en aprender de datos (en lugar de programarle reglas fijas). Nace en los 50-60s.</li>
+                    <li><strong>Deep Learning</strong> son redes neuronales complejas para procesar cosas difíciles (imágenes, audios). Toma fuerza en 2012.</li>
+                    <li><strong>GenAI</strong> es solo la subdisciplina más reciente de Deep Learning enfocada en CREAR datos nuevos basados en probabilidades.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 3.5: REDES NEURONALES (INTERACTIVO)
+             ========================================== -->
+        <section class="slide" id="slide-neural-net" data-section="0. ¿Qué es la IA?" data-source-slide="Nueva — ¿Cómo funciona una Red Neuronal? (No es magia, son números)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">0. ¿Qué es la IA?</span>
+                    <h2 class="slide-title">Redes Neuronales: <span>No es magia, son números y conexiones</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <!-- EXPLICACIÓN DETALLADA DE LA LÓGICA -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 10px; background: rgba(255,255,255,0.4); border: 1px solid rgba(0, 102, 254, 0.05); padding: 25px; border-radius: 16px;">
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 8px;">¿Cómo funciona una Red Neuronal?</h3>
+                        <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 10px;">
+                            Inspiradas en las neuronas de nuestro cerebro, las redes neuronales artificiales son capas de nodos interconectados. Cada conexión tiene un <strong>"peso"</strong> (un número decimal) que determina la fuerza de la señal que pasa a través de ella.
+                        </p>
+                        <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                            La red no posee intuición ni comprensión biológica; simplemente procesa entradas, aplica multiplicaciones por los pesos, suma todos los resultados en una neurona y decide el output. <strong>Entrenar una IA</strong> es ajustar matemáticamente esos pesos hasta obtener la predicción correcta.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--accent-purple); margin-bottom: 8px;">Explicación del Ejemplo Interactivo</h3>
+                        <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 10px;">
+                            Diseñamos una red simple de clasificación de frutas con dos variables de entrada y dos opciones de salida:
+                        </p>
+                        <ul style="font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary); margin-left: 20px; display: flex; flex-direction: column; gap: 4px; list-style-type: disc;">
+                            <li><strong>Entradas (x1 y x2):</strong> Toman el valor <strong>1</strong> si la fruta tiene esa propiedad física, y <strong>0</strong> si no.</li>
+                            <li><strong>Pesos (w):</strong> Los números en las líneas. La salida de <strong>Manzana</strong> prioriza el color Rojo (w1 = +0.9) y penaliza la forma Alargada (w2 = -0.4). La de <strong>Banana</strong> penaliza el Rojo (w3 = -0.5) y premia la forma Alargada (w4 = +0.95).</li>
+                            <li><strong>Suma (Σ) y Decisión (y):</strong> La neurona de salida calcula la ecuación y activa la opción con el resultado final más alto.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="neural-net-widget">
+                    <!-- Simulador de Red Neuronal -->
+                    <div class="nn-simulator">
+                        <div class="nn-controls-row">
+                            <span style="font-size:0.85rem; font-weight:700; display:flex; align-items:center;">Simular Entrada:</span>
+                            <button class="btn-nn-input active" id="btn-nn-apple" data-input="apple">
+                                <i data-lucide="apple" style="width:16px; height:16px;"></i> Rojo y Redondo (Manzana)
+                            </button>
+                            <button class="btn-nn-input" id="btn-nn-banana" data-input="banana">
+                                <i data-lucide="banana" style="width:16px; height:16px;"></i> Amarillo y Alargado (Banana)
+                            </button>
+                        </div>
+                        
+                        <!-- Visualizador Gráfico de Nodos -->
+                        <div class="nn-visual-container">
+                            <svg class="nn-svg-connections" id="nn-svg-connections">
+                                <!-- Las conexiones se dibujarán/actualizarán por JS -->
+                            </svg>
+                            
+                            <!-- Capa de Entrada -->
+                            <div class="nn-layer">
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node active" id="nn-node-x1">1</div>
+                                    <span class="nn-node-label">x1: Rojo</span>
+                                </div>
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node" id="nn-node-x2">0</div>
+                                    <span class="nn-node-label">x2: Alargado</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Capa Oculta (Procesamiento) -->
+                            <div class="nn-layer">
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node" id="nn-node-h1">Σ</div>
+                                    <span class="nn-node-label">Neurona A (Suma)</span>
+                                </div>
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node" id="nn-node-h2">Σ</div>
+                                    <span class="nn-node-label">Neurona B (Suma)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Capa de Salida -->
+                            <div class="nn-layer">
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node active" id="nn-node-y1">90%</div>
+                                    <span class="nn-node-label" style="color:var(--success);">y1: Manzana</span>
+                                </div>
+                                <div class="nn-node-wrapper">
+                                    <div class="nn-node" id="nn-node-y2">0%</div>
+                                    <span class="nn-node-label" style="color:var(--danger);">y2: Banana</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel de Cálculos Matemáticos -->
+                    <div class="nn-math-panel">
+                        <h3 class="nn-math-title">
+                            <i data-lucide="calculator" style="width: 20px; height: 20px;"></i>
+                            La Matemática detrás
+                        </h3>
+                        
+                        <div class="nn-math-card">
+                            <strong>Ecuación para Manzana (y1):</strong>
+                            <span>y1 = (x1 * w1) + (x2 * w2)</span>
+                            <span id="nn-eq-apple">y1 = (1 * 0.9) + (0 * -0.4)</span>
+                            <div class="nn-math-result" id="nn-res-apple">Resultado: +0.9 (Manzana ✅)</div>
+                        </div>
+                        
+                        <div class="nn-math-card">
+                            <strong>Ecuación para Banana (y2):</strong>
+                            <span>y2 = (x1 * w3) + (x2 * w4)</span>
+                            <span id="nn-eq-banana">y2 = (1 * -0.5) + (0 * 0.95)</span>
+                            <div class="nn-math-result danger" id="nn-res-banana">Resultado: -0.5 (Banana ❌)</div>
+                        </div>
+                        
+                        <p style="font-size:0.75rem; color:var(--text-muted); line-height:1.3; margin-top:5px;">
+                            <strong>Conclusión:</strong> Al cambiar los valores de entrada, la red neuronal simplemente efectúa multiplicaciones y sumas. Si el resultado es positivo y alto, activa la salida correspondiente. ¡Es puro cálculo probabilístico!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Explicando redes neuronales de forma simple:</strong></p>
+                <ul>
+                    <li>Usa este simulador interactivo para disipar el aura "mágica" de la IA.</li>
+                    <li>Explica: "Cuando ven a ChatGPT responder, o a una IA reconocer una foto, no hay un duende pensando. Hay una gigantesca red de estas ecuaciones lineales".</li>
+                    <li>Muestra cómo al cambiar a "Banana Amarillo y Alargado", las variables cambian, las multiplicaciones de pesos cambian, y el resultado matemático activa la otra salida.</li>
+                    <li>Menciona: "Aprender" o "entrenar" la IA es simplemente ajustar esos pesos decimales (los multiplicadores) mediante millones de ejemplos hasta que den las sumas correctas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 4: DIAGRAMA MAD
+             ========================================== -->
+        <section class="slide" id="slide-mad" data-section="0. ¿Qué es la IA?" data-source-slide="Slide 33 — Diagrama MAD">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">0. ¿Qué es la IA?</span>
+                    <h2 class="slide-title">No hay IA sin <span>M.A.D.</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="mad-widget">
+                    <!-- Diagrama de Venn -->
+                    <div class="venn-visual">
+                        <div class="venn-circle venn-data" data-venn="data"><span>DATA (D)</span></div>
+                        <div class="venn-circle venn-ml" data-venn="ml"><span>ML (M)</span></div>
+                        <div class="venn-circle venn-ai" data-venn="ai"><span>IA (A)</span></div>
+                        <!-- Intersección central -->
+                        <div class="venn-intersection venn-mad-center" data-venn="mad">MAD</div>
+                    </div>
+                    
+                    <!-- Panel de Detalle -->
+                    <div class="mad-detail-panel">
+                        <h3 class="detail-tier-title" id="mad-detail-title">MAD: Machine Learning + AI + Data</h3>
+                        <p class="detail-tier-desc" id="mad-detail-desc">Los tres pilares esenciales de los sistemas de decisión modernos. Haz clic sobre cada elemento para ver la explicación.</p>
+                        
+                        <!-- Vinculación legal explícita -->
+                        <div style="margin-top: 16px; background: rgba(114,9,183,0.05); border: 1.5px solid rgba(114,9,183,0.12); border-radius: 12px; padding: 14px; font-size: 0.78rem; line-height: 1.5; color: var(--text-secondary);">
+                            <span style="font-family: var(--font-heading); font-weight: 800; color: var(--accent-purple); display: block; margin-bottom: 6px;">⚖️ ¿Por qué le importa a un abogado?</span>
+                            <strong>D (Data) → Datos personales:</strong> Cada expediente, acta o dictamen es un dato. Su tratamiento está regulado por la Ley 25.326 (Argentina) y el RGPD europeo. Si una IA toma decisiones con datos incompletos o sesgados, la responsabilidad puede recaer en el profesional que la utilizó.<br><br>
+                            <strong>M+A → El modelo que aplica tu institución:</strong> La Caja de Salta que usa un modelo de IA para evaluar beneficios previsionales debe poder auditar y explicar cómo ese modelo tomó la decisión — principio de <em>explicabilidad</em> exigido por marcos regulatorios internacionales.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Mensaje Clave de Datos y Leyes:</strong></p>
+                <ul>
+                    <li><strong>"No hay IA sin Datos".</strong> La IA no crea conocimientos mágicamente; procesa históricos.</li>
+                    <li><strong>D (Data):</strong> La base. Si los datos están sucios, sesgados o desorganizados, cualquier IA generará resultados erróneos ("Garbage in, garbage out").</li>
+                    <li><strong>M (Machine Learning):</strong> El cerebro estadístico que predice.</li>
+                    <li><strong>A (AI):</strong> La interfaz de acción automatizada.</li>
+                    <li>*Vínculo Legal/Abogado: Desconectamos del "sólo códigos" y entramos a regulaciones en datos personales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 5: ANALYTICS VS ML
+             ========================================== -->
+        <section class="slide" id="slide-comparison-analytics" data-section="0. ¿Qué es la IA?" data-source-slide="Slide 34 — Analytics vs Machine Learning">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">0. ¿Qué es la IA?</span>
+                    <h2 class="slide-title">Analytics tradicional vs <span>Machine Learning</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="comparison-slider-widget">
+                    <!-- Control de Toggle Deslizante -->
+                    <div class="slider-control-container">
+                        <span class="slider-label" id="label-analytics">Analytics Tradicional</span>
+                        <div class="switch-input-container" id="switch-comparison">
+                            <div class="switch-handle"><i data-lucide="arrow-right-left" style="width: 16px; height: 16px;"></i></div>
+                        </div>
+                        <span class="slider-label slider-label-right" id="label-ml">Machine Learning</span>
+                    </div>
+                    
+                    <!-- Tarjetas de Enfoque -->
+                    <div class="comparison-cards">
+                        <!-- Analytics Card -->
+                        <div class="comparison-card highlight" id="card-analytics">
+                            <div class="card-feature-icon">
+                                <i data-lucide="bar-chart-3" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <h3 class="detail-tier-title">Enfoque Analítico</h3>
+                            <p class="detail-tier-desc" style="font-size:0.85rem;">Analiza datos históricos para diagnosticar qué ocurrió y por qué ocurrió en el pasado.</p>
+                            <ul class="feature-list">
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Reactivo (mira hacia atrás)</span></li>
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Requiere un humano que tome la acción</span></li>
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Reportes estáticos, cuadros e historiales</span></li>
+                            </ul>
+                        </div>
+                        <!-- ML Card -->
+                        <div class="comparison-card" id="card-ml">
+                            <div class="card-feature-icon">
+                                <i data-lucide="trending-up" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <h3 class="detail-tier-title">Enfoque Predictivo (ML)</h3>
+                            <p class="detail-tier-desc" style="font-size:0.85rem;">Utiliza algoritmos matemáticos para predecir qué pasará en el futuro y sugerir u optimizar decisiones de forma autónoma.</p>
+                            <ul class="feature-list">
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Proactivo (mira hacia adelante)</span></li>
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Puede automatizar la toma de decisiones</span></li>
+                                <li class="feature-item"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> <span>Modelado dinámico y probabilístico</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Simulación del Caso de Negocio -->
+                    <div id="churn-scenario-container" style="background:#fafafb; border:1px solid #f2f4f7; padding:18px; border-radius:12px; font-size:0.85rem; line-height:1.5;">
+                        <p id="churn-scenario-desc">Mueve el interruptor para ver un ejemplo de fuga de clientes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>El salto del Diagnóstico a la Predicción:</strong></p>
+                <ul>
+                    <li>Usa el switch interactivo para ilustrar el cambio de mentalidad.</li>
+                    <li><strong>Analytics tradicional</strong> responde: ¿Qué pasó? y ¿Por qué ocurrió? (Históricos).</li>
+                    <li><strong>Machine Learning</strong> responde: ¿Qué pasará? y ¿Qué acción tomar? (Futuro y Prescripción).</li>
+                    <li><em>Ejemplo Práctico de Clientes:</em> Muestra cómo cambia la respuesta de recibir un reporte mensual tarde frente a predecir la caída de un cliente en tiempo real y dispararle una oferta de retención.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 6: HISTORIA Y ORIGEN
+             ========================================== -->
+        <section class="slide" id="slide-history" data-section="2. Historia y Contexto" data-source-slide="Slides 3-4 — Línea de Tiempo e Historia">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">2. Historia y Contexto</span>
+                    <h2 class="slide-title">Línea de Tiempo: <span>Hitos de la IA</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="quiz-timeline-widget">
+                    <!-- Línea de Tiempo Interactiva -->
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-progress-line"></div>
+                        
+                        <!-- Nodo 1956 -->
+                        <div class="timeline-node" data-node="0">
+                            <div class="timeline-dot">1956</div>
+                            <span class="timeline-year">Dartmouth</span>
+                        </div>
+                        <!-- Nodo 1997 -->
+                        <div class="timeline-node" data-node="1">
+                            <div class="timeline-dot">1997</div>
+                            <span class="timeline-year">Deep Blue</span>
+                        </div>
+                        <!-- Nodo 2012 -->
+                        <div class="timeline-node" data-node="2">
+                            <div class="timeline-dot">2012</div>
+                            <span class="timeline-year">Deep Learning</span>
+                        </div>
+                        <!-- Nodo 2022 -->
+                        <div class="timeline-node" data-node="3">
+                            <div class="timeline-dot">2022</div>
+                            <span class="timeline-year">ChatGPT</span>
+                        </div>
+                        <!-- Nodo Presente -->
+                        <div class="timeline-node" data-node="4">
+                            <div class="timeline-dot">Hoy</div>
+                            <span class="timeline-year">Agentes</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel Dedicado para Detalle de Hitos -->
+                    <div class="timeline-detail-panel">
+                        <h3 class="timeline-detail-year" id="timeline-detail-year">1956 - Dartmouth</h3>
+                        <p class="timeline-detail-text" id="timeline-detail-text">John McCarthy, Marvin Minsky y Claude Shannon proponen el término "Artificial Intelligence" en un workshop de verano.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Destruir mitos históricos:</strong></p>
+                <ul>
+                    <li>Involucra a la audiencia haciendo la pregunta interactiva del Quiz.</li>
+                    <li>Muestra que la IA NO nació en 2022 con ChatGPT. Tiene **70 años de historia**.</li>
+                    <li><strong>1956:</strong> Conferencia de Dartmouth. El nacimiento formal del término "Artificial Intelligence" por John McCarthy y Claude Shannon.</li>
+                    <li>Habla del "invierno de la IA" y de cómo la potencia de cómputo actual (GPU) y la masividad de internet permitieron el boom de 2012 y 2022.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 7: ESTADÍSTICAS DEL BOOM
+             ========================================== -->
+        <section class="slide" id="slide-stats" data-section="2. Historia y Contexto" data-source-slide="Slide 20 — En aprox 3 años (Estadísticas)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">2. Historia y Contexto</span>
+                    <h2 class="slide-title">La Revolución en Cifras: <span>3 Años de Impacto</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="stats-widget">
+                    <!-- Stat 1 -->
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat-num-1">400M+</span>
+                        <h3 class="stat-title">Usuarios Activos en ChatGPT</h3>
+                        <p class="stat-desc">La adopción masiva más veloz registrada por un servicio digital. Superó los 100M de usuarios en solo 2 meses; hoy supera los 400 millones mensuales.</p>
+                        <span class="stat-source">Fuente: <a href="https://openai.com/blog" target="_blank">OpenAI — Feb 2025</a></span>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat-num-2">50%</span>
+                        <h3 class="stat-title">Shadow AI en Empresas</h3>
+                        <p class="stat-desc">Empleados que utilizan herramientas de IA generativa de manera informal y sin autorización explícita de su compañía.</p>
+                        <span class="stat-source">Fuente: <a href="https://www.mckinsey.com" target="_blank">McKinsey Global Survey</a></span>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat-num-3">$210B</span>
+                        <h3 class="stat-title">Inversión Proyectada</h3>
+                        <p class="stat-desc">Capital volcado globalmente a la infraestructura de modelos fundacionales y chips específicos para IA.</p>
+                        <span class="stat-source">Fuente: <a href="https://www.gartner.com" target="_blank">Gartner IT Spending Forecast</a></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Magnitud del Fenómeno:</strong></p>
+                <ul>
+                    <li>Al entrar en esta diapositiva, los números suben automáticamente de forma dinámica.</li>
+                    <li><strong>180M de usuarios:</strong> Supera la velocidad de adopción de la telefonía móvil, la TV o el internet móvil.</li>
+                    <li><strong>$210B:</strong> Inversión gigantesca que demuestra que la IA no es una moda transitoria, sino un cambio de infraestructura estructural.</li>
+                    <li><strong>50% de Shadow AI:</strong> ¡Este es el gancho! Introduce que la mitad de los empleados que te escuchan probablemente usan IA sin decírselo al jefe. Esto nos lleva al siguiente slide.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 8: CAOS ORGANIZACIONAL (ELEFANTE)
+             ========================================== -->
+        <section class="slide" id="slide-chaos" data-section="3. Caos Organizacional" data-source-slide="Slide 8 & 22 — Muñeco Estresado y Elefante en la Sala">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">3. Caos Organizacional</span>
+                    <h2 class="slide-title">El Elefante en la Sala: <span>Shadow AI</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="chaos-widget">
+                    <!-- Simulación de Chats Cruzados -->
+                    <div class="chat-simulator-container">
+                        <div class="chat-sim-header">
+                            <div class="chat-sim-status"></div>
+                            <span class="chat-sim-title">Discusión de Comité Directivo</span>
+                        </div>
+                        <div class="chat-sim-messages" id="chat-messages-container">
+                            <!-- Generado por JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Panel de Explicación -->
+                    <div class="shadow-ai-detail">
+                        <span class="shadow-badge">
+                            <i data-lucide="shield-alert" style="width: 14px; height: 14px;"></i> Alerta Corporativa
+                        </span>
+                        <h3 class="detail-tier-title" style="font-size:1.3rem;">¿Qué es Shadow AI?</h3>
+                        <p class="detail-tier-desc" style="font-size:0.85rem; line-height:1.4;">
+                            Ocurre cuando los colaboradores adoptan asistentes de IA públicos de forma oculta en sus flujos diarios. Buscan productividad, pero generan vulnerabilidad corporativa.
+                        </p>
+                        <div style="background:#fce8e6; border:1px solid #f8d7da; border-radius:10px; padding:12px; font-size:0.75rem; color:#a2201b;">
+                            <strong>Casos Testigo:</strong> Empresas como Ford, Air Canada y McDonalds tuvieron que intervenir o regularizar el acceso tras detectar riesgos de IP o fallos de control.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>El estrés directivo y Shadow AI:</strong></p>
+                <ul>
+                    <li>Al entrar en la slide, se simula un chat en tiempo real con posiciones contradictorias de directores. Genera identificación y humor en la audiencia.</li>
+                    <li>Explica la tensión: El CEO quiere seguridad; el empleado quiere optimizar tiempo; el área comercial presiona por resultados.</li>
+                    <li>Define **Shadow AI**: los empleados usan las herramientas por sí mismos si la empresa no les da una vía oficial o segura.</li>
+                    <li>Menciona que la prohibición total es una ilusión; solo empuja la adopción a la clandestinidad y aumenta los riesgos legales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 9: CASOS DE FRACASO (SAMSUNG)
+             ========================================== -->
+        <section class="slide" id="slide-failure" data-section="4. Casos de Fracaso" data-source-slide="Slide 23 — Samsung Mayo 2023">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">4. Casos de Fracaso</span>
+                    <h2 class="slide-title">Filtración de Datos: <span>Caso Samsung</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="failure-widget">
+                    <!-- Dashboard de la filtración -->
+                    <div class="leak-dashboard">
+                        <div class="leak-dashboard-header">
+                            <span style="font-family:var(--font-heading); font-weight:800; font-size:0.9rem; color:var(--danger);">Registro de Incidentes (Mayo 2023)</span>
+                            <div class="leak-badge"><i data-lucide="shield-alert" style="width:12px; height:12px;"></i> Leak Detectado</div>
+                        </div>
+                        
+                        <div class="leak-steps">
+                            <div class="leak-step-card" data-step="1">
+                                <div class="leak-step-num">1</div>
+                                <span class="leak-step-text">Filtración de Código de Base de Datos</span>
+                                <span class="leak-step-desc">Un ingeniero subió código del software de medición de semiconductores para depurar un error.</span>
+                            </div>
+                            <div class="leak-step-card" data-step="2">
+                                <div class="leak-step-num">2</div>
+                                <span class="leak-step-text">Subida de Código de Diagnóstico de Equipos</span>
+                                <span class="leak-step-desc">Otro empleado copió bloques de código utilizados para identificar maquinaria defectuosa buscando optimización.</span>
+                            </div>
+                            <div class="leak-step-card" data-step="3">
+                                <div class="leak-step-num">3</div>
+                                <span class="leak-step-text">Grabación de Reunión convertida en Acta</span>
+                                <span class="leak-step-desc">Un empleado transcribió una grabación de una reunión interna y la cargó a la IA para redactar un resumen ejecutivo.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Veredicto del Abogado -->
+                    <div class="failure-legal-verdict">
+                        <div class="verdict-header">
+                            <i data-lucide="gavel" style="width:20px; height:20px;"></i>
+                            <span id="failure-verdict-title">Consecuencias Legales</span>
+                        </div>
+                        <p id="failure-verdict-content" style="font-size:0.85rem; line-height:1.5;">Haz clic en cada incidente para ver el análisis de riesgo legal correspondiente.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>El rol de Abogado y los Secretos Comerciales:</strong></p>
+                <ul>
+                    <li><strong>Caso Samsung (Mayo 2023):</strong> Oro para la perspectiva legal de tu charla.</li>
+                    <li>Explica los 3 incidentes que ocurrieron en la división de semiconductores.</li>
+                    <li>Detalla el problema con los términos de servicio (ToS) públicos de herramientas gratuitas de OpenAI/Google: lo que se sube pasa a guardarse en sus servidores y puede usarse para entrenar futuros modelos.</li>
+                    <li><strong>Impacto legal:</strong> Pérdida de confidencialidad y del estatus de 'secreto industrial o comercial', lo cual requiere por ley mantener medidas de custodia razonables.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 10: CASOS DE ÉXITO (JP MORGAN)
+             ========================================== -->
+        <section class="slide" id="slide-success" data-section="5. Casos de Éxito" data-source-slide="Slide 24 — JP Morgan: De la Prohibición a la Innovación">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">5. Casos de Éxito</span>
+                    <h2 class="slide-title">JP Morgan: <span>De Prohibir a Gobernar</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="success-evolution-widget">
+                    <!-- Cronograma de Evolución -->
+                    <div class="evolution-timeline">
+                        <div class="evolution-line"></div>
+                        <div class="evolution-progress-line"></div>
+                        
+                        <!-- Prohibición -->
+                        <div class="evolution-node" data-evo="0">
+                            <div class="evolution-dot prohibit"><i data-lucide="ban" style="width: 20px; height: 20px;"></i></div>
+                            <span class="evolution-date">Feb 2023</span>
+                            <span style="font-size: 0.75rem; font-weight:700;">Ban Total</span>
+                        </div>
+                        
+                        <!-- Desarrollo -->
+                        <div class="evolution-node" data-evo="1">
+                            <div class="evolution-dot"><i data-lucide="git-branch" style="width: 20px; height: 20px;"></i></div>
+                            <span class="evolution-date">Verano 2024</span>
+                            <span style="font-size: 0.75rem; font-weight:700;">LLM Suite</span>
+                        </div>
+                        
+                        <!-- Escalamiento -->
+                        <div class="evolution-node" data-evo="2">
+                            <div class="evolution-dot innovate"><i data-lucide="users" style="width: 20px; height: 20px;"></i></div>
+                            <span class="evolution-date">Hoy</span>
+                            <span style="font-size: 0.75rem; font-weight:700;">60k+ a 200k+</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel de Detalle de la evolución -->
+                    <div class="evolution-panel">
+                        <div class="evolution-status-icon" id="evolution-status-icon">
+                            <!-- Generado por JS -->
+                        </div>
+                        <div class="evolution-info">
+                            <h3 class="evolution-title" id="evolution-title">Febrero 2023: Bloqueo Total</h3>
+                            <p class="evolution-desc" id="evolution-desc">Haz clic en los hitos del cronograma para ver la evolución estratégica de JP Morgan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>El camino correcto: Gobernanza activa:</strong></p>
+                <ul>
+                    <li>Muestra el contraste: En febrero 2023 JP Morgan prohibió totalmente la IA (como todas las firmas reguladas de Wall Street).</li>
+                    <li>Pero entendieron que no podían ignorar el aumento de productividad.</li>
+                    <li><strong>Solución (LLM Suite):</strong> Crearon una interfaz interna y segura. Los datos viajan cifrados por API directa con contratos especiales que prohíben explícitamente a OpenAI entrenar con sus datos.</li>
+                    <li><strong>Resultado:</strong> De prohibición total a un entorno controlado con miles de usuarios activos creando resúmenes e informes financieros.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 11: 3 VISIONES DE POLÍTICAS
+             ========================================== -->
+        <section class="slide" id="slide-policies" data-section="6. Marco de Decisión" data-source-slide="Slide 26 — Tres Visiones sobre Políticas de IA">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">6. Marco de Decisión</span>
+                    <h2 class="slide-title">Tres Políticas ante la <span>Adopción de IA</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="policies-widget">
+                    <!-- Tarjeta A -->
+                    <div class="policy-card-3d" data-policy="laissez">
+                        <div class="policy-card-inner">
+                            <div class="policy-card-front">
+                                <div class="policy-icon"><i data-lucide="eye-off" style="width: 24px; height: 24px;"></i></div>
+                                <h3 class="policy-card-front-title">1. No Hacer Nada</h3>
+                                <p class="policy-card-front-desc">Se tolera o ignora el uso. Cada empleado decide qué subir y qué herramienta emplear. (Laissez-faire)</p>
+                                <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted);">Clic para ver análisis</span>
+                            </div>
+                            <div class="policy-card-back">
+                                <div class="policy-pros-cons">
+                                    <div class="policy-pro"><i data-lucide="check-circle-2" style="width:14px; height:14px;"></i> <span><strong>Pro:</strong> Cero costo de software o desarrollo inmediato.</span></div>
+                                    <div class="policy-con"><i data-lucide="x-circle" style="width:14px; height:14px;"></i> <span><strong>Contra:</strong> Caos en IP, filtración de datos de clientes, cero control.</span></div>
+                                </div>
+                                <span class="policy-badge-legal" style="color:var(--danger); border-color:var(--danger);">⚠️ RIESGO LEGAL MUY ALTO</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta B -->
+                    <div class="policy-card-3d" data-policy="hybrid">
+                        <div class="policy-card-inner">
+                            <div class="policy-card-front">
+                                <div class="policy-icon"><i data-lucide="layers" style="width: 24px; height: 24px;"></i></div>
+                                <h3 class="policy-card-front-title">2. Modelo Híbrido</h3>
+                                <p class="policy-card-front-desc">Gobernanza activa. Se otorgan herramientas internas protegidas por API y políticas de uso claro (ej. LLM Suite de JPM).</p>
+                                <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted);">Clic para ver análisis</span>
+                            </div>
+                            <div class="policy-card-back">
+                                <div class="policy-pros-cons">
+                                    <div class="policy-pro"><i data-lucide="check-circle-2" style="width:14px; height:14px;"></i> <span><strong>Pro:</strong> Seguro frente al regulador, fomenta la innovación.</span></div>
+                                    <div class="policy-con"><i data-lucide="x-circle" style="width:14px; height:14px;"></i> <span><strong>Contra:</strong> Requiere capacitar personal y firmar acuerdos API especiales.</span></div>
+                                </div>
+                                <span class="policy-badge-legal" style="color:var(--success); border-color:var(--success);">✅ RECOMENDADO</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta C -->
+                    <div class="policy-card-3d" data-policy="restrictive">
+                        <div class="policy-card-inner">
+                            <div class="policy-card-front">
+                                <div class="policy-icon"><i data-lucide="shield-alert" style="width: 24px; height: 24px;"></i></div>
+                                <h3 class="policy-card-front-title">3. Restringir Todo</h3>
+                                <p class="policy-card-front-desc">Bloqueo a nivel red corporativa de todas las direcciones de proveedores de IA externos.</p>
+                                <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted);">Clic para ver análisis</span>
+                            </div>
+                            <div class="policy-card-back">
+                                <div class="policy-pros-cons">
+                                    <div class="policy-pro"><i data-lucide="check-circle-2" style="width:14px; height:14px;"></i> <span><strong>Pro:</strong> Protege la red interna si los cortafuegos son estrictos.</span></div>
+                                    <div class="policy-con"><i data-lucide="x-circle" style="width:14px; height:14px;"></i> <span><strong>Contra:</strong> La gente usa la IA en sus móviles (Shadow AI) y frena la productividad.</span></div>
+                                </div>
+                                <span class="policy-badge-legal" style="color:var(--warning); border-color:var(--warning);">⚠️ FOMENTA SHADOW AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Matriz de decisión para el liderazgo:</strong></p>
+                <ul>
+                    <li>Haz clic en cada tarjeta para girarla (efecto 3D) y mostrar los Pros y Contras.</li>
+                    <li><strong>No hacer nada:</strong> Peligro total. Es negligencia en la custodia de datos de clientes.</li>
+                    <li><strong>Bloqueo total:</strong> Causa frustración. Los competidores que usan IA ganarán velocidad operativa.</li>
+                    <li><strong>Modelo Híbrido:</strong> La gobernanza inteligente. Firma NDAs, usa APIs seguras y enseña a tu personal qué datos PUEDEN y cuáles NO pueden subir a la IA.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 12: REGULACIÓN IA ACT
+             ========================================== -->
+        <section class="slide" id="slide-regulation" data-section="7. Regulación" data-source-slide="Slide 27 — Ley Europea de IA (IA Act)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">7. Regulación</span>
+                    <h2 class="slide-title">Regulación Global: <span>La Ley Europea de IA</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="regulation-widget">
+                    <!-- Niveles de Riesgo -->
+                    <div class="reg-levels-container">
+                        <div class="reg-level-card unacceptable" data-level="unacceptable">
+                            <div class="reg-level-info">
+                                <h3 class="reg-level-title">Riesgo Inaceptable</h3>
+                                <span class="reg-level-status">Totalmente Prohibido</span>
+                            </div>
+                            <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+                        </div>
+                        <div class="reg-level-card high active" data-level="high">
+                            <div class="reg-level-info">
+                                <h3 class="reg-level-title">Riesgo Alto</h3>
+                                <span class="reg-level-status">Estrictamente Regulado</span>
+                            </div>
+                            <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+                        </div>
+                        <div class="reg-level-card limited" data-level="limited">
+                            <div class="reg-level-info">
+                                <h3 class="reg-level-title">Riesgo Limitado</h3>
+                                <span class="reg-level-status">Obligación de Transparencia</span>
+                            </div>
+                            <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+                        </div>
+                        <div class="reg-level-card minimal" data-level="minimal">
+                            <div class="reg-level-info">
+                                <h3 class="reg-level-title">Riesgo Mínimo</h3>
+                                <span class="reg-level-status">Sin Obligaciones Legales</span>
+                            </div>
+                            <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Detalle Legal -->
+                    <div class="reg-detail-panel">
+                        <h3 class="reg-detail-title" id="reg-detail-title">Riesgo Alto (Estrictamente Regulado)</h3>
+                        <p class="reg-detail-desc" id="reg-detail-desc">Sistemas que afectan directamente derechos fundamentales o áreas críticas. Exigen auditorías, registros y supervisión humana.</p>
+                        <span class="reg-detail-examples-title">Ejemplos y Casos:</span>
+                        <ul class="reg-detail-examples-list" id="reg-detail-examples-list">
+                            <!-- Generado por JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>El marco regulatorio de referencia:</strong></p>
+                <ul>
+                    <li>Como abogado, destaca la importancia de la **Ley Europea de IA (IA Act)**, la primera ley integral sobre IA del mundo.</li>
+                    <li>Explica el enfoque basado en riesgos: a mayor probabilidad de daño a los ciudadanos, mayores exigencias legales.</li>
+                    <li><strong>Prohibido (Inaceptable):</strong> Sistemas que violan derechos humanos básicos (ej. social scoring o manipulación).</li>
+                    <li><strong>Riesgo Alto:</strong> Detección de CVs, evaluación crediticia, infraestructuras. Exige cumplimiento preventivo riguroso.</li>
+                    <li><strong>Riesgo Limitado:</strong> Chatbots generales. Exige avisar que estás chateando con una IA para evitar el engaño.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 13: CASOS DE USO SECTORIALES
+             ========================================== -->
+        <section class="slide" id="slide-usecases" data-section="8. Casos Prácticos" data-source-slide="Slides 36, 40, 44, 48 — Casos de Uso del Ecosistema">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">8. Casos Prácticos</span>
+                    <h2 class="slide-title">Casos de Éxito en el <span>Mundo Real</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="usecases-widget">
+                    <!-- Barra de filtros -->
+                    <div class="usecases-filter-bar">
+                        <button class="btn-filter-tag active" data-filter="all">Todos</button>
+                        <button class="btn-filter-tag" data-filter="retail">Retail / E-commerce</button>
+                        <button class="btn-filter-tag" data-filter="finanzas">Seguros / Finanzas</button>
+                        <button class="btn-filter-tag" data-filter="operaciones">Operaciones / Soporte</button>
+                    </div>
+                    
+                    <!-- Grid de tarjetas de casos -->
+                    <div class="usecases-grid" id="usecases-grid">
+                        <!-- Generado por JS -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Demostración de Impacto en Negocio:</strong></p>
+                <ul>
+                    <li>Haz clic en los filtros interactivos para mostrar la versatilidad de la IA en distintas áreas corporativas.</li>
+                    <li><strong>Walmart (Buscador):</strong> Transición hacia búsquedas conversacionales complejas.</li>
+                    <li><strong>AB InBev (NLP BEES):</strong> Uso de agentes inteligentes integrados a facturación para subir 40% el CSAT.</li>
+                    <li><strong>Amazon:</strong> El 35% de sus ingresos provienen de algoritmos predictivos automáticos.</li>
+                    <li><strong>Seguros (Fraude):</strong> Aceleró la revisión de siniestros un 70%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 14: CIERRE Y MINDSET (NUEVO EXCEL)
+             ========================================== -->
+        <section class="slide" id="slide-mindset" data-section="9. Mindset de Cierre" data-source-slide="Slide 21 & 61 — La IA es el nuevo Excel / Mindset de Crecimiento">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">9. Mindset de Cierre</span>
+                    <h2 class="slide-title">Mentalidad de Crecimiento: <span>El Nuevo Excel</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <div class="mindset-widget">
+                    <!-- La analogía del Excel -->
+                    <div class="excel-analogy-panel">
+                        <div class="excel-icon-wrapper">
+                            <i data-lucide="file-spreadsheet" style="width: 40px; height: 40px;"></i>
+                        </div>
+                        <h3 class="excel-analogy-title">"La IA Generativa es el nuevo Excel"</h3>
+                        <p class="excel-analogy-desc">
+                            En los años 80, muchos contadores temían que las hojas de cálculo los dejaran sin empleo. Quienes se resistieron, quedaron obsoletos; quienes lo adoptaron, multiplicaron su capacidad de análisis. La IA generativa es una herramienta de productividad horizontal similar.
+                        </p>
+                    </div>
+                    
+                    <!-- Tabla Interactiva Growth vs Replacement -->
+                    <div class="mindset-table-panel">
+                        <div class="mindset-table-header">
+                            <span class="mindset-col-title">Enfoque de Reemplazo (Fijo)</span>
+                            <span class="mindset-col-title growth">Enfoque de Crecimiento</span>
+                        </div>
+                        
+                        <div class="mindset-rows">
+                            <div class="mindset-row">
+                                <div class="mindset-item"><i data-lucide="x-circle" class="red" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"La IA va a automatizar y eliminar mi puesto."</span></div>
+                                <div class="mindset-item growth"><i data-lucide="check-circle-2" class="green" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"La IA automatizará tareas repetitivas para que yo me enfoque en valor."</span></div>
+                            </div>
+                            <div class="mindset-row">
+                                <div class="mindset-item"><i data-lucide="x-circle" class="red" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"Es muy técnico, no es para mí."</span></div>
+                                <div class="mindset-item growth"><i data-lucide="check-circle-2" class="green" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"La interfaz es lenguaje natural. Cualquiera puede usarla."</span></div>
+                            </div>
+                            <div class="mindset-row">
+                                <div class="mindset-item"><i data-lucide="x-circle" class="red" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"Es magia o es una moda pasajera."</span></div>
+                                <div class="mindset-item growth"><i data-lucide="check-circle-2" class="green" style="width:14px; height:14px; flex-shrink:0;"></i> <span>"Es estadística aplicada a procesos estructurados corporativos."</span></div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; font-weight: 800; font-size: 0.9rem; color: var(--accent-blue); padding-top: 10px; border-top: 1px solid #f2f4f7;">
+                            "La IA no reemplazará a los profesionales. Los profesionales que usen IA reemplazarán a los que no la usen."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Cierre Inspirador de la Charla:</strong></p>
+                <ul>
+                    <li>Cierra con la analogía del Excel. Plantea la IA no como una amenaza que te sustituye, sino como una herramienta horizontal que debes dominar.</li>
+                    <li>Explica la mentalidad de crecimiento (Carol Dweck): el cambio de ver la IA como un rival frente a verla como un copiloto o potenciador de capacidades.</li>
+                    <li>Como abogado, puedes reflexionar: "Los contratos no se escribirán solos de la nada, pero un abogado que audita un borrador asistido por IA tardará la mitad del tiempo y podrá enfocarse en la estrategia del cliente".</li>
+                    <li>Termina con la frase clave: **"La IA no va a reemplazar a los profesionales..."**</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN PRÁCTICA: PORTADA JURÍDICA
+             ========================================== -->
+        <section class="slide" id="slide-practical-intro" data-section="Práctica: Introducción" data-source-slide="Módulo Práctico — Guía de Capacitación de la Caja de Salta">
+            <div class="slide-cover-layout" style="padding: 40px 0;">
+                <div class="cover-badge" style="background: var(--accent-purple-light); color: var(--accent-purple); border-color: rgba(114, 9, 183, 0.2);">
+                    <i data-lucide="book-open" style="width: 14px; height: 14px;"></i>
+                    Módulo Práctico en Vivo
+                </div>
+                <h1 class="cover-title" style="font-size: 2.8rem;">IA Aplicada a la <span>Práctica Jurídica</span></h1>
+                <p class="cover-subtitle" style="font-size: 1.1rem; max-width: 750px;">
+                    Uso integral y seguro de <strong>Google Gemini, Custom GEMS y NotebookLM</strong> adaptado para abogados y procuradores de la Caja de Salta.
+                </p>
+                <div style="background: rgba(0, 102, 254, 0.04); border: 1.5px solid rgba(0, 102, 254, 0.08); border-radius: 16px; padding: 20px; max-width: 700px; text-align: left; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                    <p style="margin-bottom: 8px;"><strong>Objetivo del Módulo:</strong></p>
+                    <ul style="margin-left: 20px; display: flex; flex-direction: column; gap: 4px; list-style-type: disc;">
+                        <li>Dominar la infraestructura conceptual (Tokens y Ventana de Memoria de Trabajo).</li>
+                        <li>Procesar pruebas escaneadas, expedientes y actas judiciales vía visión artificial (Multimodalidad).</li>
+                        <li>Crear asistentes personalizados (Gems) y carpetas de investigación digital con control de alucinaciones (NotebookLM - RAG).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="speaker-notes-data">
+                <p><strong>Introducción a la Parte Práctica:</strong></p>
+                <ul>
+                    <li>Transición: Después del marco teórico, entramos a la implementación real en el día a día del abogado.</li>
+                    <li>Este módulo prático se basa en la "Guía Estructurada de Capacitación Jurídica" diseñada para la Caja de Salta.</li>
+                    <li>Haremos foco en tres tecnologías de Google: Gemini (Asistente general), Gems (Asistentes con System Prompts estructurados) y NotebookLM (La carpeta de caso con RAG).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE P1: TOKENS Y VENTANA DE CONTEXTO
+             ========================================== -->
+        <section class="slide" id="slide-tokens" data-section="Práctica: Fundamentos" data-source-slide="Módulo 1 — Tokens y Ventana de Contexto (Capacitación Jurídica)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: Fundamentos</span>
+                    <h2 class="slide-title">Tokens: <span>La Memoria de Trabajo</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    Los modelos de IA no leen palabras completas como los humanos. Dividen el texto en <strong>tokens</strong> (1 token ≈ 3/4 de palabra en español). La cantidad de tokens que una IA puede retener simultáneamente se denomina <strong>Ventana de Contexto</strong>.
+                </p>
+                
+                <div class="tokens-widget">
+                    <!-- Calculador Interactivo de Tokens -->
+                    <div class="tokens-calculator">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">Seleccionar Documento Jurídico de Prueba:</span>
+                        <div class="tokens-selector-row">
+                            <button class="btn-token-preset active" data-tokens="20" data-label="Una oración de 15 palabras">Oración (15 pal.)</button>
+                            <button class="btn-token-preset" data-tokens="1400" data-label="Un dictamen judicial o escrito de 1.000 palabras">Escrito (1.000 pal.)</button>
+                            <button class="btn-token-preset" data-tokens="50000" data-label="Un expediente de 100 páginas escaneadas">Expediente (100 pág.)</button>
+                        </div>
+                        
+                        <div class="tokens-bar-container">
+                            <div class="tokens-bar-label">
+                                <span id="token-preset-name">Una oración de 15 palabras</span>
+                                <span id="token-count-display" style="color: var(--accent-blue);">~20 tokens</span>
+                            </div>
+                            <div class="tokens-progress-bar">
+                                <div class="tokens-progress-fill" id="token-progress-fill"></div>
+                            </div>
+                        </div>
+                        
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; border-top: 1px dashed #e4e7ec; padding-top: 10px;">
+                            Capacidad total de <strong>Gemini 1.5 Pro</strong>: <strong>2.000.000 de tokens</strong> (más de 1.500 páginas procesadas de una sola vez).
+                        </div>
+                    </div>
+                    
+                    <!-- Panel Informativo de Aislamiento -->
+                    <div class="tokens-comparison-info">
+                        <div class="tokens-comparison-card">
+                            <h4 class="tokens-comparison-title">
+                                <i data-lucide="shield-check" style="width:16px; height:16px; display:inline-block; vertical-align:middle; margin-right:4px;"></i>
+                                Aislamiento de Casos
+                            </h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary);">
+                                <strong>Regla de Oro Legal:</strong> Para evitar la contaminación cruzada de datos confidenciales y mantener la coherencia del chat, siempre inicia un <strong>"Nuevo Chat"</strong> al cambiar de expediente o cliente.
+                            </p>
+                        </div>
+                        
+                        <div class="tokens-comparison-card" style="background: rgba(114, 9, 183, 0.04); border-color: rgba(114, 9, 183, 0.08);">
+                            <h4 class="tokens-comparison-title" style="color: var(--accent-purple);">
+                                <i data-lucide="brain" style="width:16px; height:16px; display:inline-block; vertical-align:middle; margin-right:4px;"></i>
+                                ¿Qué diferencia a los Modelos?
+                            </h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary);">
+                                La diferencia clave entre los diferentes modelos no es solo su tamaño, sino el <strong>límite de su ventana de contexto</strong> (los tokens que caben en memoria) y la calidad de sus <strong>pesos internos</strong> (el conocimiento adquirido durante el entrenamiento).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Tokens y Memoria de Trabajo:</strong></p>
+                <ul>
+                    <li>Explica el concepto de tokens de manera analógica: "Es el límite de memoria a corto plazo de la IA".</li>
+                    <li>Utiliza el calculador para mostrar que, mientras un escrito judicial común son pocos tokens, un expediente entero de 100 páginas (50.000 tokens) ya supera el límite de memoria de muchos modelos antiguos.</li>
+                    <li>Resalta la ventaja de Gemini 1.5 Pro: su ventana de 2 millones de tokens permite subir tomos completos de expedientes sin perder el hilo de la conversación.</li>
+                    <li>Enfatiza el **Aislamiento de Casos**: la IA recuerda lo anterior. Si mezclas dos juicios de clientes distintos en el mismo chat, la IA podría confundir hechos o jurisprudencia (contaminación cruzada).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE P2: GEMINI MULTIMODAL Y CÉDULAS
+             ========================================== -->
+        <section class="slide" id="slide-multimodal" data-section="Práctica: Gemini" data-source-slide="Módulo 2 — Gemini y Multimodalidad (Lectura de Cédulas Escaneadas)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: Gemini</span>
+                    <h2 class="slide-title">Multimodalidad: <span>Procesamiento de Cédulas</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    Google Gemini permite procesar imágenes, audios y PDFs escaneados directamente. Esto es crucial en el ámbito legal para digitalizar y extraer datos clave de cédulas manuscritas, fotos de actas de inspección o expedientes antiguos.
+                </p>
+                
+                <div class="scanned-widget">
+                    <!-- Cédula de Notificación Escaneada (Mockup) -->
+                    <div class="scanned-doc-container">
+                        <div class="scanned-stamp">Urgente</div>
+                        <h3 class="scanned-title">CÉDULA DE NOTIFICACIÓN JURÍDICA</h3>
+                        <div class="scanned-body">
+                            <p><strong>AUTOS:</strong> "GÓMEZ MARTÍN c/ CAJA DE SEGURIDAD SOCIAL s/ AMPARO" - Expte N° 84.712/2026</p>
+                            <p><strong>DESTINATARIO:</strong> Asesoría Legal - Caja de Seguridad Social de Salta</p>
+                            <p><strong>DOMICILIO:</strong> Av. Belgrano N° 980 - Salta</p>
+                            <p>Hágase saber a Ud. que en el expediente caratulado arriba indicado, el Juez de Primera Instancia Civil y Comercial de 4ta Nominación ha dictado la resolución que en su parte pertinente dice: <em>"...Salta, 10 de Agosto de 2026. Téngase por presentado el recurso de amparo. Traslado a la demandada por el plazo perentorio de cinco (5) días bajo apercibimiento de ley. Notifíquese... Fdo: Dr. Roberto Ruiz (Juez)"</em>.</p>
+                            <p style="margin-top: 10px; text-align: right; font-style: italic;">Recibido el: 13/08/2026 a las 09:30 hs. Cargo N° 451.</p>
+                        </div>
+                        <button class="btn-apply-prompt" id="btn-apply-prompt">
+                            <i data-lucide="play" style="width:16px; height:16px; display:inline-block; vertical-align:middle; margin-right:6px;"></i>
+                            Ejecutar Prompt Multimodal de Análisis
+                        </button>
+                    </div>
+                    
+                    <!-- Resultados de Gemini -->
+                    <div class="prompt-result-container">
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-purple);">Prompt enviado a Gemini:</span>
+                        <div class="prompt-text-display">
+                            "Analiza esta imagen de cédula de notificación. Transcribe el texto pertinente, identifica el expediente, la carátula, la fecha de cargo/recepción, el plazo procesal fijado y los apercibimientos consignados. Presenta el resultado en una tabla estructurada."
+                        </div>
+                        
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--success);">Respuesta estructurada de Gemini (Extracción):</span>
+                        <div class="prompt-table-display" id="prompt-table-display">
+                            <table class="legal-result-table">
+                                <thead>
+                                    <tr>
+                                        <th>Campo Extraído</th>
+                                        <th>Valor Detectado por Gemini</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Autos / Carátula</strong></td>
+                                        <td>Gómez Martín c/ Caja de Seguridad Social s/ Amparo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Expediente N°</strong></td>
+                                        <td>84.712/2026 (Juzgado Civil y Comercial 4ta Nom.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fecha de Cargo</strong></td>
+                                        <td>13 de Agosto de 2026 (09:30 hs)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Plazo Procesal</strong></td>
+                                        <td>Cinco (5) días hábiles judiciales</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Apercibimiento</strong></td>
+                                        <td>Bajo apercibimiento de resolverse de ley</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Uso de Multimodalidad en Cédulas:</strong></p>
+                <ul>
+                    <li>Muestra el simulador: al presionar el botón morado de ejecutar prompt, se extraen instantáneamente los datos de la cédula en una tabla limpia.</li>
+                    <li>Explica cómo esta funcionalidad ahorra horas de transcripción manual a los procuradores o administrativos de un estudio jurídico o institución.</li>
+                    <li>Destaca que la multimodalidad permite a la IA "ver" la foto tomada con el celular y transcribir el manuscrito de las firmas o fechas de cargo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE P3: LAS GEMS PERSONALIZADAS
+             ========================================== -->
+        <section class="slide" id="slide-gems" data-section="Práctica: Gems" data-source-slide="Módulo 3 — Las Gems Jurídicas Especializadas">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: Gems</span>
+                    <h2 class="slide-title">Gems: <span>Asistentes Jurídicos Personalizados</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    Una <strong>Gem</strong> es una versión de Gemini programada con un rol, instrucciones y pautas de redacción estrictas (System Prompt). Funciona como un <em>Manual de Procedimiento</em> para resolver tareas repetitivas en el estudio.
+                </p>
+                
+                <div class="gems-widget">
+                    <!-- Selector de Gems -->
+                    <div class="gems-list-panel">
+                        <div class="gem-card-selector active" data-gem="redactor">
+                            <div class="gem-card-icon"><i data-lucide="file-signature" style="width:20px; height:20px;"></i></div>
+                            <div class="gem-card-info">
+                                <span class="gem-card-title">Redactor de Intimaciones</span>
+                                <span class="gem-card-desc">Crea cartas documento estructuradas con normativa argentina.</span>
+                            </div>
+                        </div>
+                        <div class="gem-card-selector" data-gem="simplificador">
+                            <div class="gem-card-icon"><i data-lucide="message-square-text" style="width:20px; height:20px;"></i></div>
+                            <div class="gem-card-info">
+                                <span class="gem-card-title">Simplificador de Lenguaje Legal</span>
+                                <span class="gem-card-desc">Traduce sentencias complejas a viñetas claras para WhatsApp.</span>
+                            </div>
+                        </div>
+                        <div class="gem-card-selector" data-gem="auditor">
+                            <div class="gem-card-icon"><i data-lucide="shield-check" style="width:20px; height:20px;"></i></div>
+                            <div class="gem-card-info">
+                                <span class="gem-card-title">Auditor de Vicios Contractuales</span>
+                                <span class="gem-card-desc">Escanea contratos buscando desequilibrios o cláusulas abusivas.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel de Detalles de la Gem Seleccionada -->
+                    <div class="gem-details-panel">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-blue); display: flex; align-items: center; gap: 8px;">
+                            <i data-lucide="settings" style="width:18px; height:18px;"></i>
+                            System Prompt Completo (Instrucciones de la Gem)
+                        </h4>
+                        <div class="gems-prompt-box" id="gems-prompt-box">
+                            <!-- JS Cargará las instrucciones -->
+                        </div>
+                        
+                        <h4 style="font-family: var(--font-heading); font-size: 0.95rem; color: var(--text-primary); margin-top: 5px;">Demostración de Resolución (Antes / Después):</h4>
+                        <div class="gems-diff-container">
+                            <div class="gems-diff-box original" id="gems-diff-original">
+                                <!-- Texto original -->
+                            </div>
+                            <div class="gems-diff-box output" id="gems-diff-output">
+                                <!-- Texto procesado -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Configuración de GEMS Personalizadas:</strong></p>
+                <ul>
+                    <li>Muestra cómo funciona una Gem a través de los tres ejemplos del PDF.</li>
+                    <li>Enfatiza que el System Prompt actúa como las "reglas permanentes" de la IA: no tienes que volver a programarla cada vez que inicias sesión.</li>
+                    <li>Lee o describe el System Prompt del **Redactor de Cartas Documento e Intimaciones** (procedimientos argentinos, delimitación por corchetes `[]` para variables y cita normativa obligatoria).</li>
+                    <li>Muestra el **Simplificador de Lenguaje**: traduce un dictamen técnico incomprensible a viñetas comprensibles para un afiliado de la Caja de Seguridad Social.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE P4: NOTEBOOKLM - LA CARPETA INTELIGENTE
+             ========================================== -->
+        <section class="slide" id="slide-notebook" data-section="Práctica: NotebookLM" data-source-slide="Módulo 4 — Cuadernos en NotebookLM (La Carpeta del Caso)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: NotebookLM</span>
+                    <h2 class="slide-title">NotebookLM: <span>La Carpeta del Caso</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    NotebookLM utiliza una arquitectura **RAG** (Generación Aumentada por Recuperación) que obliga al modelo a responder <strong>únicamente con base en los documentos proporcionados</strong> por ti, eliminando las alucinaciones normativas o inventos de fallos.
+                </p>
+                
+                <div class="notebook-widget">
+                    <!-- Fuentes Cargadas (Carpeta del Caso) -->
+                    <div class="notebook-folder-panel">
+                        <div class="folder-title-row">
+                            <i data-lucide="folder-open" style="width:20px; height:20px; color:var(--accent-blue);"></i>
+                            <span class="folder-title">Expediente_Gomez_Amparo.nb</span>
+                        </div>
+                        <span style="font-size: 0.7rem; color: var(--text-muted); text-transform:uppercase; font-weight:700;">Fuentes del Caso (3 cargadas):</span>
+                        <div class="source-items-list">
+                            <div class="source-item-card" id="source-doc-1">
+                                <i data-lucide="file-text" class="pdf" style="width:16px; height:16px;"></i>
+                                <span>Demanda_Amparo_Fls_1_25.pdf</span>
+                            </div>
+                            <div class="source-item-card" id="source-doc-2">
+                                <i data-lucide="file-audio" class="audio" style="width:16px; height:16px;"></i>
+                                <span>Audio_Declaracion_Testigo_B.mp3</span>
+                            </div>
+                            <div class="source-item-card" id="source-doc-3">
+                                <i data-lucide="file-text" class="pdf" style="width:16px; height:16px;"></i>
+                                <span>Ley_Previsional_Caja_Salta.pdf</span>
+                            </div>
+                        </div>
+                        <div style="background:#e6f4ea; border:1px solid #a3cfbb; border-radius:10px; padding:12px; font-size:0.75rem; color:#146c43;">
+                            <strong>Garantía de RAG:</strong> Respuestas basadas exclusivamente en estas 3 fuentes.
+                        </div>
+                    </div>
+                    
+                    <!-- Interacción y Consultas -->
+                    <div class="notebook-chat-panel">
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Consultas Frecuentes al Caso:</span>
+                        <div class="notebook-queries">
+                            <button class="btn-notebook-query active" data-q="contradicciones">
+                                <span>1. ¿Existen contradicciones entre los testigos y la demanda?</span>
+                                <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+                            </button>
+                            <button class="btn-notebook-query" data-q="cronologia">
+                                <span>2. Generar cronología procesal con fechas clave del amparo.</span>
+                                <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+                            </button>
+                        </div>
+                        
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-blue);">Respuesta con Citas de Fuentes (NotebookLM):</span>
+                        <div class="notebook-chat-output" id="notebook-chat-output">
+                            <!-- JS cargará la respuesta -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>NotebookLM y RAG:</strong></p>
+                <ul>
+                    <li>Explica cómo NotebookLM revoluciona la preparación de un caso: "Es una carpeta digital de expedientes inteligentes".</li>
+                    <li>Resalta la diferencia fundamental de **RAG**: No alucina. Si le preguntas algo que no está en las tres fuentes de la izquierda, te dirá: "No se encuentra en los documentos proporcionados".</li>
+                    <li>Muestra el simulador de citas: al hacer clic en las consultas, las respuestas incluyen pequeñas burbujas con números `[1]`, `[2]`. Al pasar el mouse por encima, se ilumina de forma interactiva la fuente exacta en la carpeta de la izquierda, validando el control del abogado.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE P5: MATRIZ COMPARATIVA Y ÉTICA
+             ========================================== -->
+        <section class="slide" id="slide-matrix" data-section="Práctica: Síntesis" data-source-slide="Módulo 5 — Síntesis Comparativa e Implicancias Éticas (Human in the Loop)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: Síntesis</span>
+                    <h2 class="slide-title">Síntesis y <span>Principio Ético</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    Para resumir el módulo práctico, revisemos la matriz de trabajo que define cuándo utilizar cada herramienta y el principio rector obligatorio en el ejercicio profesional de la ley.
+                </p>
+                
+                <div class="matrix-card">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Criterio de Elección</th>
+                                <th>Google Gems (Gemini)</th>
+                                <th>Cuadernos (NotebookLM)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Enfoque Primario</strong></td>
+                                <td>Definir el <strong>CÓMO</strong> (Métodos de trabajo, estilo, tono y directivas).</td>
+                                <td>Definir el <strong>QUÉ</strong> (Un expediente judicial específico o causa).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fuentes de Información</strong></td>
+                                <td>Prompts del abogado + contexto general + extensiones de Workspace.</td>
+                                <td>Carga masiva directa de hasta 600 documentos (PDFs, audios, actas).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control de Alucinación</strong></td>
+                                <td>Depende del correcto diseño de instrucciones del prompt.</td>
+                                <td><strong>Estricto (RAG)</strong>: Responde exclusivamente sobre las fuentes cargadas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Analogía Jurídica</strong></td>
+                                <td>El <strong>Manual de Procedimientos</strong> o la especialización del abogado.</td>
+                                <td>La <strong>Carpeta Física</strong> o expediente digital del caso.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Principio Ético Obligatorio -->
+                <div style="background: var(--danger-light); border: 2px solid rgba(217,48,37,0.15); border-radius: 18px; padding: 25px; display: flex; flex-direction: column; gap: 10px; color: #5c0f0a;">
+                    <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--danger); display: flex; align-items: center; gap: 10px;">
+                        <i data-lucide="shield-alert" style="width:22px; height:22px;"></i>
+                        Principio Ético Institucional: Human-in-the-Loop (El Humano en el Bucle)
+                    </h4>
+                    <p style="font-size: 0.85rem; line-height: 1.55; font-weight: 500;">
+                        La Inteligencia Artificial opera únicamente como un copiloto de eficiencia y análisis de datos. <strong>La responsabilidad profesional, el criterio normativo y la validación final del escrito recaen de forma indelegable en el abogado o profesional matriculado.</strong> Ningún borrador generado por IA debe presentarse ante estrados sin revisión rigurosa previa.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Cierre Ético y Profesional:</strong></p>
+                <ul>
+                    <li>Explica la matriz comparativa: Gems = El método / NotebookLM = El expediente específico.</li>
+                    <li>Cierra con fuerza la presentación apelando al rol de Abogado.</li>
+                    <li>Menciona el principio **Human-in-the-Loop**: La IA propone, el abogado matriculado audita y firma.</li>
+                    <li>El criterio normativo no es matemático; exige ponderación de valores humanos, estrategia judicial y ética que las máquinas no poseen.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Botón flotante para volver arriba -->
+    <button class="scroll-top-btn" id="scroll-top-btn" title="Volver al inicio">
+        <i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>
+    </button>
+
+    <!-- Panel de Notas del Presentador Desplegable (Flotante) -->
+    <div class="notes-drawer" id="notes-drawer">
+        <div class="notes-header">
+            <h3 class="notes-title">
+                <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+                Notas de Presentación
+            </h3>
+            <button class="notes-close">
+                <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+            </button>
+        </div>
+        <div class="notes-body" id="notes-text-content">
+            <!-- Cargado dinámicamente por JS al hacer scroll -->
+        </div>
+    </div>
+
+    <!-- Menú de Índice Rápido Flotante -->
+    <button class="index-menu-toggle" id="index-menu-toggle">
+        <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+    </button>
+    <div class="index-drawer" id="index-drawer">
+        <h3 class="index-drawer-title">Índice de Diapositivas</h3>
+        <ul class="index-list">
+            <!-- Generado dinámicamente por JS -->
+        </ul>
+    </div>
+
+    <!-- Modal Detalle Caso de Uso -->
+    <div class="usecase-modal" id="usecase-modal">
+        <div class="usecase-modal-content">
+            <button class="modal-close"><i data-lucide="x" style="width: 24px; height: 24px;"></i></button>
+            <div id="modal-body-content">
+                <!-- Cargado por JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script_v4.js"></script>
+    <script>
+        // Inicializar los iconos de Lucide cargados por CDN
+        lucide.createIcons();
+    </script>
+</body>
+</html>

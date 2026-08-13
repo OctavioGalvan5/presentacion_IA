@@ -1,0 +1,1132 @@
+================================================================================
+          NOTAS DEL EXPOSITOR — PRESENTACIÓN INTERACTIVA DE IA
+         "Inteligencia Artificial: Desarrollar una Mentalidad de Crecimiento"
+                         Expositor: Octavio Galván
+                   (Basado en marcos conceptuales de Fredi Vivas)
+================================================================================
+                     GUÍA DE DISCURSO SLIDE POR SLIDE
+================================================================================
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 1 — PORTADA
+Sección: Introducción
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Título: "Inteligencia Artificial: Desarrollar una mentalidad de crecimiento"
+  • Tarjeta de presentación propia como Abogado / Tecnólogo
+  • Subtítulo: ecosistema, desafíos organizacionales, regulación e impacto
+
+APERTURA DE LA CHARLA — QUÉ DECIR:
+
+  1. Preséntate como Octavio Galván. Destacar el perfil DUAL: abogado de formación,
+     apasionado por la tecnología y la IA.
+
+  2. Señalar que esta presentación NO es un PowerPoint estático. Es una
+     herramienta web interactiva — ya eso demuestra el mindset tecnológico en
+     acción: "Si me hubiera limitado a un PDF, estaría siendo redundante con
+     lo que vengo a explicar."
+
+  3. Dar crédito a Fredi Vivas (CEO de RockingData, autor de "Cómo piensan
+     las máquinas", Profesor de IA en UdeSA) como fuente del material base.
+
+  4. PLANTEAR EL OBJETIVO DE LA CHARLA: entender que la IA es una herramienta
+     de productividad —"el nuevo Excel"— y cómo gobernarla de forma segura
+     en lugar de prohibirla o ignorarla.
+
+FRASE DE APERTURA SUGERIDA:
+  "Hoy no vine a contarles que la IA existe. Vine a que juntos entendamos
+  cómo dominarla antes de que nos domine a nosotros."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 2 — ECOSISTEMA DE LA IA GENERATIVA (PIRÁMIDE INTERACTIVA)
+Sección: 0. ¿Qué es la IA?
+Referencia: Slide 29 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Una pirámide de 5 niveles interactiva (clic en cada piso para expandirlo)
+  • Cada nivel detalla qué tipo de IA es, ejemplos reales y descripción
+
+CONCEPTO CENTRAL: La IA no es un monolito (ej. ChatGPT no ES toda la IA).
+Existe un ecosistema estratificado.
+
+GUÍA DE DISCURSO — NIVEL POR NIVEL (de base a cúspide):
+
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  NIVEL 1 — MODELOS FUNDACIONALES (La Base)                               │
+  │                                                                          │
+  │  Descripción: Los grandes LLMs preentrenados con terabytes de datos.     │
+  │  Requieren millones de dólares en supercómputo. Son el "cerebro crudo"   │
+  │  sobre el que todo el ecosistema se apoya.                               │
+  │                                                                          │
+  │  Ejemplos: GPT-4o (OpenAI), Claude 3 (Anthropic), Llama 3 (Meta - Open  │
+  │  Source), Gemini 1.5 Pro (Google).                                       │
+  │                                                                          │
+  │  QUÉ DECIR: "Es la infraestructura cruda. Como el petróleo que extrae    │
+  │  una plataforma: potente, pero no lo usas directamente en tu auto."      │
+  └──────────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  NIVEL 2 — APIs, FRAMEWORKS Y HERRAMIENTAS DE DESARROLLO                 │
+  │                                                                          │
+  │  Descripción: Capas intermedias que permiten a desarrolladores           │
+  │  programar agentes complejos, conectar modelos con bases de datos        │
+  │  corporativas (RAG) e integrar IA en sistemas existentes.                │
+  │                                                                          │
+  │  Ejemplos: LangChain (Framework de Agentes), OpenAI API, Hugging Face,   │
+  │  Vector Databases (Pinecone, Chroma).                                    │
+  │                                                                          │
+  │  QUÉ DECIR: "Esto es para programadores. El gasoducto que conecta el     │
+  │  petróleo crudo con las refinerías."                                     │
+  └──────────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  NIVEL 3 — ASISTENTES MULTIMODALES Y CHATBOTS                            │
+  │                                                                          │
+  │  Descripción: Los portales de consumo masivo. Procesan texto, audio,     │
+  │  código e imágenes. Son el estándar actual de productividad personal.    │
+  │                                                                          │
+  │  Ejemplos: ChatGPT Plus (OpenAI), Gemini Advanced (Google),              │
+  │  Claude 3.5 Sonnet (Anthropic), Copilot Chat (Microsoft).                │
+  │                                                                          │
+  │  QUÉ DECIR: "Lo que la mayoría de ustedes usan. Es la nafta ya refinada  │
+  │  lista para el motor de su productividad."                               │
+  └──────────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  NIVEL 4 — APLICACIONES ESPECIALIZADAS NATIVAS DE IA                     │
+  │                                                                          │
+  │  Descripción: Herramientas construidas desde cero para resolver una sola  │
+  │  tarea generativa específica. Listas para el usuario final.              │
+  │                                                                          │
+  │  Ejemplos: Jasper AI (redacción de textos), Midjourney (imágenes),       │
+  │  Synthesia (video con avatares), Otter.ai (transcripciones).             │
+  │                                                                          │
+  │  QUÉ DECIR: "Son las mejores herramientas para una sola función. Como un │
+  │  taladro de carpintero versus una navaja suiza."                         │
+  └──────────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  NIVEL 5 — APLICACIONES TRADICIONALES CON IA EMBEBIDA (Cúspide)          │
+  │                                                                          │
+  │  Descripción: Software corporativo tradicional que ya usamos, al que se  │
+  │  le inyectaron capacidades de IA. El usuario no configura nada técnico.  │
+  │                                                                          │
+  │  Ejemplos: Microsoft Copilot en Word/Excel/Teams, Adobe Firefly en       │
+  │  Photoshop, filtros inteligentes en Gmail, autocompletar en Excel.       │
+  │                                                                          │
+  │  QUÉ DECIR: "Ya lo están usando sin darse cuenta. El autocompletar del  │
+  │  correo ya ES IA. Bienvenidos al ecosistema."                            │
+  └──────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 3 — LA IA COMO "CONCEPTO PARAGUAS" (CÍRCULOS CONCÉNTRICOS)
+Sección: 0. ¿Qué es la IA?
+Referencia: Slide 32 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Diagrama de 5 círculos anidados (del más grande al más pequeño):
+    Ciencias de la Computación → IA → Machine Learning → Deep Learning → GenAI
+  • Al hacer clic en cada círculo, aparece la definición correspondiente
+
+OBJETIVO: Diferenciar términos que la prensa y la audiencia confunden.
+
+GUÍA DE DISCURSO — CÍRCULO POR CÍRCULO (de afuera hacia adentro):
+
+  ◉ CIENCIAS DE LA COMPUTACIÓN (el más externo)
+    Definición: El campo científico general de la computación, algoritmos y
+    sistemas. Tronco común de todo.
+    Cuándo nace: Desde los años 40 (Turing, Von Neumann).
+
+  ◉ INTELIGENCIA ARTIFICIAL (IA)
+    Definición: Sistemas capaces de realizar tareas que requieren inteligencia
+    humana (razonar, tomar decisiones, comprender lenguaje, reconocer imágenes).
+    Es un CONCEPTO PARAGUAS, no una tecnología específica.
+    Cuándo nace: 1956 — Conferencia de Dartmouth (John McCarthy acuñó el término).
+
+  ◉ MACHINE LEARNING (ML)
+    Definición: Rama de la IA donde las computadoras NO son programadas con
+    reglas explícitas. Aprenden autónomamente de patrones en datos.
+    Cuándo nace: Arthur Samuel (1959). Se populariza en la década del 2000.
+    Fuente: "La máquina se le da ejemplos y ella encuentra las reglas sola."
+
+  ◉ DEEP LEARNING
+    Definición: Técnica avanzada de ML que usa redes neuronales artificiales
+    profundas (varias capas) para procesar cosas complejas: audios, imágenes,
+    texto no estructurado.
+    Cuándo nace: Yann LeCun / Geoffrey Hinton — 2012 fue el año del boom con
+    AlexNet ganando la competencia ImageNet.
+
+  ◉ GENERATIVE AI — IA GENERATIVA (el más interno)
+    Definición: La punta más reciente. Modelos que no solo ANALIZAN datos
+    existentes, sino que CREAN contenido nuevo e inédito (texto, código,
+    imágenes, música) basado en probabilidades estadísticas.
+    Ejemplos: ChatGPT, DALL-E, Midjourney, Gemini.
+
+MENSAJE CLAVE PARA CERRAR EL SLIDE:
+  "Cuando alguien dice 'uso IA', probablemente usa GenAI. Pero GenAI es
+  apenas la punta del iceberg de un campo con 70 años de historia."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 3.5 — REDES NEURONALES: NO ES MAGIA, SON NÚMEROS
+Sección: 0. ¿Qué es la IA?
+Referencia: Slide nuevo/adicional
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Simulador interactivo de una red neuronal simple con nodos visuales
+  • Dos botones: "Manzana (Rojo y Redondo)" vs "Banana (Amarillo y Alargado)"
+  • Panel matemático que muestra las ecuaciones en tiempo real al cambiar entrada
+
+OBJETIVO: Disipar el "aura mágica" de la IA. Mostrar que es matemática pura.
+
+CÓMO FUNCIONA EL SIMULADOR (explicar paso a paso):
+
+  CAPA DE ENTRADA:
+    x1 = 1 si la fruta es ROJA, 0 si no.
+    x2 = 1 si la fruta es ALARGADA, 0 si no.
+
+  PESOS (los multiplicadores aprendidos):
+    La red "aprendió" que:
+    → Peso para Manzana (rojo): w1 = +0.9 (muy positivo → favorece manzana)
+    → Peso para Manzana (alargado): w2 = -0.4 (negativo → penaliza si es alargado)
+    → Peso para Banana (rojo): w3 = -0.5 (negativo → penaliza si es rojo)
+    → Peso para Banana (alargado): w4 = +0.95 (muy positivo → favorece banana)
+
+  ECUACIONES AL PRESIONAR "MANZANA" (x1=1, x2=0):
+    y1 (Manzana) = (1 × 0.9) + (0 × -0.4) = +0.9 → Resultado ALTO → ¡Manzana!
+    y2 (Banana)  = (1 × -0.5) + (0 × 0.95) = -0.5 → Resultado BAJO → No banana.
+
+  ECUACIONES AL PRESIONAR "BANANA" (x1=0, x2=1):
+    y1 (Manzana) = (0 × 0.9) + (1 × -0.4) = -0.4 → Resultado BAJO → No manzana.
+    y2 (Banana)  = (0 × -0.5) + (1 × 0.95) = +0.95 → Resultado ALTO → ¡Banana!
+
+GUÍA DE DISCURSO:
+
+  "Cuando ven a ChatGPT responder algo brillante, o a una IA reconocer una
+  cara en una foto, no hay un duende sentado pensando. Hay miles de millones
+  de estas operaciones matemáticas elementales ocurriendo en milisegundos."
+
+  "Entrenar una IA es simplemente ajustar esos pesos decimales (los
+  multiplicadores) mediante millones de ejemplos, hasta que las sumas den
+  los resultados correctos. Eso es todo. Es estadística a escala colosal."
+
+  "'¿Me va a reemplazar?' Si entiendes esto, entiendes que la IA no piensa
+  — calcula. No tiene intuición, no tiene ética, no tiene contexto. NECESITA
+  de alguien que sí tenga esas cosas."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 4 — NO HAY IA SIN M.A.D. (DIAGRAMA DE VENN)
+Sección: 0. ¿Qué es la IA?
+Referencia: Slide 33 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Diagrama de Venn con tres círculos solapados: Data (D), Machine Learning (M),
+    e Inteligencia Artificial (A)
+  • En el centro: "MAD" — la intersección de los tres
+  • Al hacer clic en cada círculo, aparece la definición correspondiente
+
+CONCEPTO CLAVE DE CADA ELEMENTO:
+
+  ◉ D — DATA (Los Datos)
+    "La IA no es magia, es estadística a gran escala. Sin datos de calidad,
+    los algoritmos no tienen combustible para aprender."
+    Los datos representan el pasado e histórico de la organización.
+    CONCEPTO CRÍTICO: "Garbage in, garbage out" — si los datos están sucios,
+    sesgados o incompletos, la IA produce resultados erróneos.
+
+  ◉ M — MACHINE LEARNING
+    "El motor de cómputo y modelado matemático. Procesa esos datos, detecta
+    patrones imposibles para el ojo humano y aprende a predecir comportamientos."
+
+  ◉ A — ARTIFICIAL INTELLIGENCE
+    "La automatización del proceso decisional y la interfaz hacia el negocio.
+    Es el agente que decide la acción basada en lo que predijo el ML."
+
+  ◉ MAD (Centro) — La Fórmula Completa
+    "El ecosistema completo. Sin datos, no hay ML. Sin ML, no hay IA
+    inteligente. Son capas interdependientes."
+
+VÍNCULO LEGAL/ABOGADO — QUÉ DECIR:
+  "Esto me importa como abogado. Antes de pedir IA, una empresa debe tener
+  sus datos en orden. Y los datos tienen regulación: datos personales, datos
+  sensibles, secretos comerciales. Aquí es donde la ley y la tecnología se
+  cruzan inevitablemente."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 5 — ANALYTICS TRADICIONAL vs. MACHINE LEARNING (SWITCH INTERACTIVO)
+Sección: 0. ¿Qué es la IA?
+Referencia: Slide 34 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Dos tarjetas comparativas con un toggle (interruptor) para cambiar entre modos
+  • Abajo: un caso de negocio real (fuga de clientes / Churn) que cambia dinámicamente
+    según el modo seleccionado
+
+CONCEPTO CENTRAL: El salto del diagnóstico del pasado a la predicción del futuro.
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  ANALYTICS TRADICIONAL                                                  │
+  │  Responde a: ¿QUÉ PASÓ? ¿POR QUÉ OCURRIÓ?                              │
+  │  • Reactivo (mira hacia atrás)                                          │
+  │  • Requiere un humano que tome la acción                                │
+  │  • Reportes estáticos (PDF del día 5 de cada mes)                       │
+  │                                                                         │
+  │  Caso Churn (Fuga de Clientes):                                         │
+  │  "El reporte mensual muestra que el 4% de clientes se fue el mes        │
+  │  pasado. Fin del análisis."                                             │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  MACHINE LEARNING (Predictivo)                                          │
+  │  Responde a: ¿QUÉ PASARÁ? ¿QUÉ ACCIÓN TOMAR?                           │
+  │  • Proactivo (mira hacia adelante)                                      │
+  │  • Puede automatizar la toma de decisiones                              │
+  │  • Modelado dinámico y probabilístico en tiempo real                    │
+  │                                                                         │
+  │  Caso Churn (Fuga de Clientes):                                         │
+  │  "El modelo detecta HOY que un cliente premium redujo su consumo 30%.   │
+  │  Predice 85% de probabilidad de fuga inminente y le dispara             │
+  │  automáticamente un email con un descuento del 15% personalizado."      │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+GUÍA DE DISCURSO:
+  "La diferencia no es solo tecnológica. Es una diferencia de FILOSOFÍA DE
+  NEGOCIO. Analytics te dice qué le pasó a tu empresa ayer. Machine Learning
+  te dice qué le va a pasar mañana y toma acción sin que intervenga nadie."
+
+  "Un abogado con Analytics: 'Revisé los contratos vencidos del mes pasado.'
+  Un abogado con ML: 'El sistema me avisa 30 días antes que un contrato está
+  en riesgo de litigio, basándose en el comportamiento del cliente.'"
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 6 — LÍNEA DE TIEMPO: HITOS DE LA IA (INTERACTIVA)
+Sección: 2. Historia y Contexto
+Referencia: Slides 3-4 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Línea de tiempo horizontal con 5 nodos clicables
+  • Al seleccionar cada nodo, aparece el detalle del hito histórico
+
+OBJETIVO: Destruir el mito de que "la IA nació con ChatGPT en 2022".
+La IA tiene 70 años de historia.
+
+HITOS CLAVE — QUÉ DECIR EN CADA UNO:
+
+  ● 1956 — Dartmouth (El Nacimiento Formal)
+    John McCarthy, Marvin Minsky y Claude Shannon proponen el término
+    "Artificial Intelligence" en un workshop de verano en Dartmouth College.
+    "La IA fue inventada antes de que existieran las calculadoras de bolsillo."
+    * Dato extra: Los primeros años fueron muy optimistas. Esperaban que las
+    máquinas fueran inteligentes en 20 años. Luego vino el "invierno de la IA".
+
+  ● 1997 — Deep Blue (La IA vence al ajedrez)
+    La computadora Deep Blue de IBM derrota al campeón mundial Garry Kasparov.
+    "Primera vez en la historia que una máquina supera a un humano en un juego
+    de estrategia compleja. El mundo entró en pánico. No pasó nada catastrófico."
+
+  ● 2012 — Deep Learning (El Gran Salto)
+    AlexNet, una red neuronal profunda, gana la competencia ImageNet con un margen
+    histórico. Es el inicio del boom del Deep Learning.
+    "El hardware (GPUs para videojuegos) y la cantidad de datos de internet
+    finalmente desbloquearon la tecnología que teóricamente existía desde los 50s."
+
+  ● 2022 — ChatGPT (La Explosión Masiva)
+    OpenAI lanza ChatGPT en noviembre. Alcanza 100 millones de usuarios en 2 meses.
+    La adopción más veloz de cualquier servicio digital de la historia.
+    "La diferencia: por primera vez, la IA habla en lenguaje natural. Cualquiera
+    puede usarla. No necesitas saber programar."
+
+  ● Hoy — La Era de los Agentes
+    Los modelos ya no solo responden preguntas, ACTÚAN. Navegan internet,
+    reservan citas, ejecutan código, envían correos. Son agentes autónomos.
+    "La siguiente ola ya llegó: IA que no solo piensa, sino que hace."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 7 — LA REVOLUCIÓN EN CIFRAS: 3 AÑOS DE IMPACTO (ESTADÍSTICAS)
+Sección: 2. Historia y Contexto
+Referencia: Slide 20 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • 3 tarjetas con números animados que suben dinámicamente al entrar al slide
+  • Los números aumentan desde cero hasta el valor final en 1.2 segundos
+
+ESTADÍSTICAS Y SU CONTEXTO:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  180 MILLONES +  de Usuarios Activos en ChatGPT                      │
+  │  Fuente: OpenAI Reports                                              │
+  │                                                                      │
+  │  Para contextualizar: Facebook tardó 4 años en llegar a 100M.       │
+  │  Instagram tardó 2.5 años. ChatGPT tardó 2 MESES.                   │
+  │  "Nunca en la historia un servicio digital fue adoptado tan rápido   │
+  │  por tanta gente. Esto no es una moda. Es un cambio de paradigma."  │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  50% de Shadow AI en empresas                                        │
+  │  Fuente: McKinsey Global Survey                                      │
+  │                                                                      │
+  │  El 50% de los empleados usa herramientas de IA de manera           │
+  │  INFORMAL y SIN AUTORIZACIÓN explícita de su empresa.               │
+  │                                                                      │
+  │  GANCHO PARA LA AUDIENCIA: "Levanten la mano quienes usaron         │
+  │  ChatGPT en el trabajo SIN decirle a su jefe." [PAUSA]              │
+  │  "Eso es Shadow AI. Y es el tema del próximo slide."                │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  210 Billones (USD) de inversión proyectada                          │
+  │  Fuente: Gartner IT Spending Forecast                                │
+  │                                                                      │
+  │  Capital volcado globalmente en infraestructura de IA: chips        │
+  │  especializados (NVIDIA), centros de datos, modelos fundacionales.  │
+  │                                                                      │
+  │  "Cuando las empresas más grandes del mundo invierten esta cantidad  │
+  │  de dinero, no están apostando a una moda. Están rediseñando la     │
+  │  infraestructura del capitalismo del siglo XXI."                    │
+  └──────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 8 — EL ELEFANTE EN LA SALA: SHADOW AI (CHAT SIMULADO)
+Sección: 3. Caos Organizacional
+Referencia: Slides 8 y 22 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Al entrar en el slide, se simula en tiempo real un chat de directivos
+    con posiciones contradictorias (como WhatsApp corporativo)
+  • Panel lateral explicando qué es Shadow AI
+
+MENSAJES DEL CHAT SIMULADO (aparecen uno por uno con 1.8 segundos de intervalo):
+
+  Director de Marketing:
+  "¡Mi hijo de 12 años hizo una web en 5 minutos con GPT! Estamos perdiendo
+  el tiempo, hay que subir todo a la IA ya."
+
+  CEO:
+  "¡Cuidado! Prohíban de inmediato el uso de ChatGPT en las computadoras
+  de la oficina. Riesgo total de filtraciones."
+
+  Gerente Legal:
+  "El uso no regulado (Shadow AI) expone nuestros datos a OpenAI. Podríamos
+  perder el secreto industrial si los empleados suben código."
+
+  Líder de Ventas:
+  "Pero mis vendedores están cerrando el doble de propuestas usándolo a
+  escondidas... ¿qué hacemos?"
+
+QUÉ ES SHADOW AI — EXPLICAR:
+  "Ocurre cuando los colaboradores adoptan asistentes de IA públicos de forma
+  oculta en sus flujos diarios. Buscan productividad genuina, pero generan
+  vulnerabilidad corporativa."
+
+  Casos testigo reales: Ford, Air Canada y McDonalds tuvieron que intervenir
+  o regularizar el acceso tras detectar riesgos de propiedad intelectual.
+
+MENSAJE CENTRAL PARA LA AUDIENCIA:
+  "La prohibición total es una ilusión. Si no les das a tus empleados una
+  herramienta segura, van a usar la insegura desde sus celulares personales.
+  Shadow AI ya está pasando en tu empresa, te guste o no. La pregunta no es
+  si sucede, sino si quieres controlarlo."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 9 — FILTRACIÓN DE DATOS: CASO SAMSUNG (MAYO 2023)
+Sección: 4. Casos de Fracaso
+Referencia: Slide 23 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Dashboard de "Registro de Incidentes" con 3 tarjetas clicables
+  • Al hacer clic en cada incidente, aparece el análisis legal correspondiente
+
+CONTEXTO DEL CASO:
+  Mayo 2023. División de Semiconductores de Samsung Electronics.
+  Empleados usaron ChatGPT (herramienta pública gratuita) para optimizar su
+  trabajo sin autorización. Los términos de servicio de OpenAI en ese momento
+  establecían que el contenido subido podía usarse para entrenar futuros modelos.
+
+LOS 3 INCIDENTES (hacer clic en cada tarjeta para el análisis):
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  INCIDENTE 1: Filtración de Código de Base de Datos                  │
+  │                                                                      │
+  │  QUÉ PASÓ: Un ingeniero subió código fuente del software de         │
+  │  medición de semiconductores para corregir un bug.                  │
+  │                                                                      │
+  │  ANÁLISIS LEGAL: Pérdida de Secretos Comerciales.                   │
+  │  El secreto industrial exige medidas de resguardo activas.          │
+  │  Al subirlo a una IA pública, se rompe la confidencialidad          │
+  │  y se pierde el estatus legal de "secreto protegido".               │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  INCIDENTE 2: Subida de Código de Diagnóstico de Equipos             │
+  │                                                                      │
+  │  QUÉ PASÓ: Otro empleado copió bloques de código de maquinaria      │
+  │  de descarte de chips en busca de optimización.                     │
+  │                                                                      │
+  │  ANÁLISIS LEGAL: Exposición de Propiedad Intelectual sin NDA.       │
+  │  Cualquier propiedad intelectual corporativa subida a un servidor   │
+  │  externo sin acuerdo de confidencialidad firmado constituye una     │
+  │  divulgación no autorizada.                                         │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  INCIDENTE 3: Grabación de Reunión convertida en Acta                │
+  │                                                                      │
+  │  QUÉ PASÓ: Un empleado transcribió la grabación de una reunión      │
+  │  corporativa estratégica a ChatGPT para que generara un resumen.   │
+  │                                                                      │
+  │  ANÁLISIS LEGAL: Violación del Secreto Profesional y Societario.   │
+  │  Las actas de directorio son confidenciales. Su transcripción       │
+  │  a un tercero (la IA) vulnera el deber de reserva corporativo.     │
+  └──────────────────────────────────────────────────────────────────────┘
+
+CONSECUENCIA:
+  Samsung prohibió de forma temporal el uso de herramientas de IA generativa
+  en sus dispositivos corporativos. El daño reputacional y de secreto
+  comercial ya estaba hecho.
+
+REFLEXIÓN CLAVE DEL ABOGADO:
+  "El empleado no quería dañar a la empresa. Quería ser productivo. Pero la
+  empresa no tenía política clara ni herramienta segura alternativa. Esa
+  omisión es responsabilidad del liderazgo, no solo del empleado."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 10 — JP MORGAN: DE PROHIBIR A GOBERNAR (LÍNEA DE TIEMPO)
+Sección: 5. Casos de Éxito
+Referencia: Slide 24 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Cronograma de evolución con 3 hitos (clic en cada nodo para el detalle)
+  • Panel lateral con descripción del estado en cada etapa
+
+EVOLUCIÓN DE JP MORGAN CHASE:
+
+  ● FEBRERO 2023: BLOQUEO TOTAL (ícono: escudo rojo de alerta)
+    Siguiendo la postura general de Wall Street y presiones del regulador
+    FINRA, JP Morgan prohíbe de forma absoluta el uso de ChatGPT y
+    herramientas de IA de consumo en su red interna.
+
+    QUÉ DECIR: "Mismo pánico que vimos en el chat de Samsung. Reacción
+    comprensible pero incompleta. La prohibición no es una estrategia,
+    es una pausa."
+
+  ● VERANO 2024: DESARROLLO INTERNO (LLM Suite) (ícono: árbol de git azul)
+    En lugar de mantener el veto perpetuo, JP Morgan construye una pasarela
+    propia y segura ("LLM Suite"). Conectan modelos de lenguaje de nivel
+    corporativo vía APIs privadas con contratos especiales que garantizan que
+    los datos bancarios NO se usan para entrenar modelos externos de OpenAI.
+
+    DETALLES TÉCNICO-LEGALES:
+    • APIs privadas: los datos no pasan por servidores públicos de ChatGPT
+    • Contratos de Procesamiento de Datos (DPA) firmados con el proveedor
+    • Audit logs de qué datos se consultan y quién los consulta
+    • Zero Data Retention: los datos no se almacenan en los servidores del proveedor
+
+  ● HOY: ADOPCIÓN MASIVA Y PRODUCTIVIDAD SEGURA (ícono: personas verdes)
+    • Agosto 2024: 60.000 usuarios activos en la plataforma
+    • Para 2025/2026: más de 200.000 empleados a nivel mundial
+    • Uso: redacción de informes, auditorías de contratos, análisis financiero
+    • Total compliance legal con los reguladores financieros
+
+MENSAJE FINAL:
+  "El camino correcto no es prohibir ni ignorar. Es GOBERNAR. JP Morgan
+  tardó 18 meses en ir de prohibición total a 200k usuarios productivos.
+  Eso es una estrategia de adopción corporativa responsable."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 11 — TRES POLÍTICAS ANTE LA ADOPCIÓN DE IA (TARJETAS 3D)
+Sección: 6. Marco de Decisión
+Referencia: Slide 26 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • 3 tarjetas con efecto flip 3D (al hacer clic giran y muestran pros/contras)
+  • Cada tarjeta representa una postura corporativa diferente ante la IA
+
+LAS TRES POLÍTICAS (hacer clic para girar y ver análisis):
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  POLÍTICA 1: NO HACER NADA (Laissez-faire)                           │
+  │                                                                      │
+  │  Descripción: Se tolera o ignora el uso. Cada empleado decide       │
+  │  qué subir y qué herramienta emplear.                                │
+  │                                                                      │
+  │  PRO:  Cero costo de software o desarrollo inmediato.               │
+  │  CONTRA: Caos en propiedad intelectual, filtración de datos de      │
+  │          clientes, cero control, responsabilidad legal difusa.      │
+  │                                                                      │
+  │  VEREDICTO LEGAL: ⚠️ RIESGO LEGAL MUY ALTO                          │
+  │  "Es negligencia en la custodia de datos confidenciales. Un juez    │
+  │  podría interpretar que la empresa consintió la exposición."        │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  POLÍTICA 2: MODELO HÍBRIDO / GOBERNANZA ACTIVA ← RECOMENDADO       │
+  │                                                                      │
+  │  Descripción: Se otorgan herramientas internas protegidas por API   │
+  │  y políticas de uso claras (ejemplo: LLM Suite de JP Morgan).       │
+  │                                                                      │
+  │  PRO:  Seguro frente al regulador, fomenta innovación controlada,  │
+  │        los empleados tienen una vía oficial y segura.               │
+  │  CONTRA: Requiere capacitar personal, firmar acuerdos API y DPAs,  │
+  │          implica una inversión inicial.                             │
+  │                                                                      │
+  │  VEREDICTO LEGAL: ✅ RECOMENDADO                                     │
+  │  "Combina productividad con cumplimiento legal. El estándar hacia   │
+  │  el que apuntan las empresas reguladas."                            │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  POLÍTICA 3: RESTRINGIR TODO (Bloqueo total)                         │
+  │                                                                      │
+  │  Descripción: Bloqueo a nivel red corporativa de todas las IPs       │
+  │  de proveedores de IA externos.                                     │
+  │                                                                      │
+  │  PRO:  Protege la red interna si los cortafuegos son estrictos.     │
+  │  CONTRA: La gente usa la IA en sus móviles personales (Shadow AI   │
+  │          no controlable). Frena la productividad. Los competidores  │
+  │          que sí la usan ganan ventaja.                              │
+  │                                                                      │
+  │  VEREDICTO LEGAL: ⚠️ FOMENTA SHADOW AI                              │
+  │  "Falsa sensación de seguridad. El riesgo no desaparece, se        │
+  │  desplaza a donde no puedes verlo."                                 │
+  └──────────────────────────────────────────────────────────────────────┘
+
+CIERRE DEL SLIDE:
+  "La pregunta para el liderazgo no es ¿usamos IA? La respuesta ya la dio
+  el 50% de sus empleados. La pregunta correcta es: ¿la usamos de forma que
+  nos proteja a nosotros y a nuestros clientes?"
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 12 — REGULACIÓN GLOBAL: LA LEY EUROPEA DE IA (IA ACT)
+Sección: 7. Regulación
+Referencia: Slide 27 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • 4 niveles de riesgo apilados verticalmente (tarjetas clicables)
+  • Al hacer clic en cada nivel, aparece descripción detallada + ejemplos
+
+CONTEXTO GENERAL — QUÉ DECIR:
+  "La Ley Europea de IA (EU AI Act) es la primera regulación integral sobre
+  IA del mundo. Aprobada en 2024, aplica principio de extraterritorialidad:
+  si haces negocios con la UE, te aplica aunque operes desde Argentina."
+
+  "El enfoque es basado en riesgo: a mayor probabilidad de daño a los
+  ciudadanos, mayores obligaciones legales para la empresa."
+
+LOS 4 NIVELES DE RIESGO:
+
+  ████ RIESGO INACEPTABLE — TOTALMENTE PROHIBIDO
+  Sistemas que representan una amenaza clara para derechos fundamentales.
+
+  EJEMPLOS:
+  → Sistemas de puntuación social administrados por gobiernos (Social Scoring)
+    como los que usa China para calificar a ciudadanos.
+  → Manipulación cognitiva del comportamiento (juguetes activados por voz
+    que induzcan a conductas peligrosas en niños).
+  → Categorización biométrica para deducir opiniones políticas, raza u
+    orientación sexual de personas.
+
+  ▓▓▓ RIESGO ALTO — ESTRICTAMENTE REGULADO
+  No están prohibidos, pero exigen auditorías, trazabilidad, mitigación de
+  sesgos e intervención humana garantizada antes de su despliegue.
+
+  EJEMPLOS:
+  → Software de reclutamiento y selección de personal (CV Screening)
+  → Evaluación de solvencia crediticia bancaria (Credit Scoring)
+  → Sistemas de identificación biométrica remota en tiempo real
+  → Gestión de infraestructuras críticas (agua, gas, electricidad)
+
+  VÍNCULO LEGAL: "Si tu empresa implementa un algoritmo de selección de CVs
+  sin auditoría de sesgo, en la UE estarías incumpliendo la ley. En
+  Argentina, aunque todavía no hay ley específica, el RGPD y la Ley 25.326
+  de Protección de Datos aplican en contextos similares."
+
+  ░░░ RIESGO LIMITADO — OBLIGACIÓN DE TRANSPARENCIA
+  Herramientas que interactúan con humanos o generan contenido manipulado.
+  El usuario DEBE saber que está hablando con una IA.
+
+  EJEMPLOS:
+  → Chatbots de atención al cliente
+  → Deepfakes (videos o audios generados sintéticamente)
+  → Textos generados por IA con fines informativos masivos
+
+  --- RIESGO MÍNIMO O NULO — SIN OBLIGACIONES LEGALES
+  La gran mayoría de los sistemas cotidianos. No hay carga regulatoria.
+
+  EJEMPLOS:
+  → Videojuegos con IA (comportamiento de personajes no jugables)
+  → Filtros de Spam en el correo electrónico
+  → Sistemas de recomendación básicos en e-commerce
+
+REFLEXIÓN FINAL DEL ABOGADO:
+  "La IA no opera en un vacío legal. Donde la ley local no alcanza, ya hay
+  marcos internacionales que sí lo hacen. Y la tendencia es clara: los
+  próximos 5 años verán regulación IA en América Latina también."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 13 — CASOS DE ÉXITO EN EL MUNDO REAL (GRID FILTRABLE)
+Sección: 8. Casos Prácticos
+Referencia: Slides 36, 40, 44, 48 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Grid de tarjetas de casos de uso filtrable por industria
+  • Al hacer clic en cada tarjeta, se abre un modal con detalles completos
+
+FILTROS DISPONIBLES: Todos / Retail-E-commerce / Seguros-Finanzas / Operaciones-Soporte
+
+LOS 6 CASOS DE USO (con detalles completos):
+
+  ══ RETAIL / E-COMMERCE ══
+
+  1. WALMART — Buscador GenAI Conversacional
+     Tag: Buscador GenAI
+     Problema: Clientes pasaban demasiado tiempo buscando productos con filtros
+     manuales confusos para planear compras completas.
+     Solución: Integración de LLMs propios ('Wallaby') + APIs de OpenAI.
+     Búsqueda orientada a "misiones de compra" en lenguaje natural.
+     Ejemplo: "Planear fiesta infantil de unicornios" → la IA genera la lista completa.
+     Impacto: Reducción significativa del abandono de carrito. Más conversiones.
+     Fuente: Walmart Corporate / Retail Dive
+
+  2. AMAZON — Motor de Recomendaciones Predictivo
+     Tag: Recomendaciones
+     Métrica: 35% de las ventas
+     Problema: Usuarios no descubrían productos complementarios relevantes
+     en el catálogo masivo.
+     Solución: Algoritmos de filtrado colaborativo en tiempo real a nivel de ítem.
+     Impacto: El 35% de todas las ventas de Amazon provienen de estas sugerencias.
+     Fuente: McKinsey & Company / Amazon Business Report
+
+  ══ SEGUROS / FINANZAS ══
+
+  3. SEGUROS (Fraude) — Detección de Siniestros con Visión Artificial
+     Tag: Detección Fraude
+     Métrica: -70% tiempo de investigación
+     Problema: Analistas tardaban semanas revisando fotos y facturas
+     para descartar fraudes en seguros de autos.
+     Solución: Modelos de visión artificial que analizan fotos de siniestros
+     cruzándolas con metadatos del clima y bases históricas de colisiones.
+     Impacto: 70% menos tiempo de investigación + ahorro millonario en
+     liquidaciones fraudulentas.
+     Fuente: Accenture Financial Services Report
+
+  4. SEGUROS DE VIAJE — Motor de Recomendación de Pólizas
+     Tag: Motor Recomendación
+     Métrica: 61% de precisión
+     Problema: Pólizas genéricas no atraían a viajeros jóvenes o de deportes extremos.
+     Solución: ML predictivo entrenado con perfiles de siniestralidad de millones
+     de viajes previos. Recomienda la póliza óptima para cada perfil.
+     Impacto: 61% de precisión en el primer contacto. Ventas cruzadas elevadas.
+     Fuente: Gartner Case Study in Insurance Tech
+
+  ══ OPERACIONES / SOPORTE ══
+
+  5. AB InBev — Agentes NLP para Facturación (Sistema BEES)
+     Tag: Multiagentes NLP
+     Métrica: +40% en satisfacción del cliente (CSAT)
+     Problema: Errores de facturación en el ecosistema B2B tardaban días en
+     resolverse, afectando la experiencia del cliente B2B.
+     Solución: Agentes automatizados inteligentes (SS&C Blue Prism) integrados
+     con NLP para interactuar directamente con facturas y resolverlas.
+     Impacto: +40% en CSAT y agilización total del proceso administrativo.
+     Fuente: SS&C Blue Prism / CX Dive Case Study
+
+  6. REDACCIÓN DEPORTIVA — Generación Automática de Crónicas
+     Tag: Generación de Texto
+     Métrica: Automatizada
+     Problema: Los medios no podían costear redactores para cubrir ligas
+     de fútbol escolar o ligas menores locales.
+     Solución: IA que toma planillas de estadísticas (goles, tarjetas, tiros)
+     y redacta crónicas informativas fluidas en segundos.
+     Impacto: Miles de artículos deportivos adicionales sin carga extra.
+     Fuente: AP (Associated Press) / Reuters AI Journalism
+
+CÓMO PRESENTAR ESTE SLIDE:
+  "La IA no es solo para empresas de tecnología. Walmart, Amazon, AB InBev,
+  la prensa deportiva. Empresas de industrias completamente distintas están
+  encontrando su forma particular de aplicarla."
+
+  "¿Cuál de estos casos les parece más cercano a su realidad?" [pregunta a la audiencia]
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE 14 — MENTALIDAD DE CRECIMIENTO: "EL NUEVO EXCEL" (CIERRE)
+Sección: 9. Mindset de Cierre
+Referencia: Slides 21 y 61 del material de Fredi Vivas
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Panel de analogía con Excel + tabla comparativa interactiva
+  • Tabla con 2 columnas: "Enfoque de Reemplazo (Fijo)" vs "Enfoque de Crecimiento"
+
+LA ANALOGÍA DEL EXCEL:
+  "En los años 80, muchos contadores temían que las hojas de cálculo los
+  dejaran sin empleo. Decían que era complicado, que no era para ellos,
+  que era una moda. Quienes se resistieron, quedaron obsoletos en 10 años.
+  Quienes lo adoptaron, multiplicaron su capacidad de análisis y valieron
+  más en el mercado. La IA generativa es exactamente la misma situación."
+
+TABLA COMPARATIVA — MENTALIDAD FIJA vs MENTALIDAD DE CRECIMIENTO:
+
+  CREENCIA FIJA                              CREENCIA DE CRECIMIENTO
+  ──────────────────────────────────────────────────────────────────────
+  "La IA va a automatizar y eliminar      "La IA automatizará tareas repetitivas
+  mi puesto."                              para que yo me enfoque en el valor
+                                           estratégico."
+
+  "Es muy técnico, no es para mí."        "La interfaz es lenguaje natural.
+                                           Cualquiera puede usarla."
+
+  "Es magia o es una moda pasajera."      "Es estadística aplicada a procesos
+                                           estructurados corporativos."
+
+FRASE CLAVE DE CIERRE (citarla textualmente):
+  "La IA no reemplazará a los profesionales.
+   Los profesionales que usen IA reemplazarán a los que no la usen."
+
+REFLEXIÓN PERSONAL COMO ABOGADO — QUÉ DECIR:
+  "Los contratos no se van a escribir solos. Pero un abogado que audita un
+  borrador asistido por IA tardará la mitad del tiempo y podrá enfocarse
+  en la estrategia del cliente, en la negociación, en el juicio. Eso no es
+  reemplazar al abogado — es duplicar su capacidad."
+
+  "La IA no tiene ética. No tiene juicio. No firma con matrícula.
+  Ustedes sí. Eso es irremplazable."
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    — MÓDULO PRÁCTICO: IA EN LA PRÁCTICA JURÍDICA —
+                    Google Gemini, Custom Gems y NotebookLM
+                    (Capacitación para la Caja de Salta)
+════════════════════════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P0 — PORTADA DEL MÓDULO PRÁCTICO
+Sección: Práctica: Introducción
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Portada especial del módulo práctico con los 3 objetivos
+  • Herramientas: Google Gemini, Gems y NotebookLM
+
+TRANSICIÓN — QUÉ DECIR:
+  "Hasta acá, el marco conceptual y los casos. Ahora vamos a ver cómo
+  esto se aplica concretamente en el día a día de un abogado o procurador
+  de la Caja de Salta."
+
+TRES OBJETIVOS DEL MÓDULO PRÁCTICO:
+  1. Dominar tokens y ventana de memoria de trabajo.
+  2. Procesar pruebas escaneadas, expedientes y actas vía IA visual (Multimodalidad).
+  3. Crear asistentes personalizados (Gems) y carpetas de investigación digital
+     con control de alucinaciones (NotebookLM con tecnología RAG).
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P1 — TOKENS: LA MEMORIA DE TRABAJO DE LA IA
+Sección: Práctica: Fundamentos
+Referencia: Módulo 1 de la Guía de Capacitación Jurídica
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Calculador interactivo de tokens con 3 presets:
+    → Oración (15 palabras) ≈ 20 tokens
+    → Escrito judicial (1.000 palabras) ≈ 1.400 tokens
+    → Expediente de 100 páginas ≈ 50.000 tokens
+  • Barra de progreso visual que muestra qué tan "llena" está la memoria de la IA
+  • Referencia: Gemini 1.5 Pro tiene 2.000.000 tokens de ventana
+
+QUÉ SON LOS TOKENS — EXPLICAR:
+  "Los modelos de IA no leen palabras completas como nosotros. Dividen el
+  texto en 'tokens', que son fragmentos de palabras. En español, 1 token ≈
+  3/4 de palabra. Así que 1.000 palabras ≈ 1.400 tokens."
+
+LA VENTANA DE CONTEXTO — ANALOGÍA:
+  "La ventana de contexto es la memoria de trabajo de la IA. Como la memoria
+  RAM de una computadora: si superas su límite, olvida lo que puso al principio."
+
+  "Modelos antiguos: 4.000 tokens (como 3 páginas). ChatGPT 4: 128.000 tokens.
+  Gemini 1.5 Pro: 2.000.000 de tokens (¡más de 1.500 páginas de una sola vez!)."
+
+REGLA DE ORO LEGAL — ENFATIZAR CON FUERZA:
+  "Para evitar la contaminación cruzada de datos confidenciales y mantener
+  la coherencia del análisis, SIEMPRE iniciar un 'NUEVO CHAT' al cambiar de
+  expediente o cliente."
+
+  "Si mezclan el expediente de Juan García con el de María López en el mismo
+  chat, la IA podría confundir hechos, jurisprudencia, montos o plazos.
+  Eso, en un escrito judicial, puede ser catastrófico."
+
+DIFERENCIA ENTRE MODELOS — QUÉ DECIR:
+  "La diferencia clave entre los diferentes modelos no es solo el tamaño,
+  sino el límite de su ventana de contexto y la calidad de sus pesos internos
+  (su 'conocimiento'). Gemini 1.5 Pro destaca en ambos para uso jurídico."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P2 — MULTIMODALIDAD: PROCESAMIENTO DE CÉDULAS ESCANEADAS
+Sección: Práctica: Gemini
+Referencia: Módulo 2 de la Guía de Capacitación Jurídica
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Mockup de una cédula de notificación judicial realista (Expte. 84.712/2026)
+  • Botón "Ejecutar Prompt Multimodal de Análisis"
+  • Tabla de respuesta estructurada de Gemini con los datos extraídos
+
+LA CÉDULA DEL EJEMPLO:
+  Autos: "Gómez Martín c/ Caja de Seguridad Social s/ Amparo" — Expte. 84.712/2026
+  Juzgado: Civil y Comercial de 4ta Nominación
+  Fecha de cargo: 13/08/2026 a las 09:30 hs.
+  Plazo: Cinco (5) días hábiles para contestar
+  Apercibimiento: Bajo apercibimiento de resolverse de ley
+
+EL PROMPT ENVIADO A GEMINI:
+  "Analiza esta imagen de cédula de notificación. Transcribe el texto
+  pertinente, identifica el expediente, la carátula, la fecha de cargo/
+  recepción, el plazo procesal fijado y los apercibimientos consignados.
+  Presenta el resultado en una tabla estructurada."
+
+TABLA DE RESPUESTA DE GEMINI:
+  Campo Extraído          | Valor Detectado
+  ─────────────────────── | ─────────────────────────────────────────────
+  Autos / Carátula        | Gómez Martín c/ Caja de Seguridad Social s/ Amparo
+  Expediente N°           | 84.712/2026 (Juzgado Civil y Comercial 4ta Nom.)
+  Fecha de Cargo          | 13 de Agosto de 2026 (09:30 hs)
+  Plazo Procesal          | Cinco (5) días hábiles judiciales
+  Apercibimiento          | Bajo apercibimiento de resolverse de ley
+
+QUÉ DECIR AL MOSTRAR ESTO:
+  "Con una foto de la cédula tomada desde el celular, Gemini extrae en
+  segundos lo mismo que un administrativo tardaría 10-15 minutos en transcribir
+  y verificar manualmente."
+
+  "La multimodalidad significa que Gemini puede 'ver' imágenes, 'escuchar'
+  audios, 'leer' PDFs escaneados. No solo texto. Eso es revolucionario para
+  el ámbito jurídico donde gran parte del trabajo es documental."
+
+  "Casos de uso adicionales: transcribir declaraciones de testigos grabadas,
+  extraer datos de fotos de accidentes para seguros, analizar actas
+  manuscritas de juicios históricos."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P3 — GEMS: ASISTENTES JURÍDICOS PERSONALIZADOS
+Sección: Práctica: Gems
+Referencia: Módulo 3 de la Guía de Capacitación Jurídica
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • 3 Gems jurídicas disponibles para seleccionar en el lado izquierdo
+  • Al seleccionar una, aparece el System Prompt completo y un demo Antes/Después
+
+QUÉ ES UNA GEM — DEFINICIÓN:
+  "Una Gem es una versión de Gemini programada con un rol, instrucciones y
+  pautas de redacción estrictas. Funciona como un Manual de Procedimiento
+  que le dice a la IA exactamente cómo comportarse y qué estilo seguir."
+
+  "La diferencia con un chat normal: en un chat normal, tienes que explicarle
+  a Gemini quién es y qué hace CADA VEZ que lo abres. Con una Gem, esas
+  instrucciones son permanentes. La IA ya sabe que es tu asistente jurídico."
+
+LAS 3 GEMS JURÍDICAS DEL EJEMPLO:
+
+  ◉ GEM 1: REDACTOR DE INTIMACIONES Y CARTAS DOCUMENTO
+    Rol: Redactar cartas documento estructuradas con normativa argentina.
+    System Prompt incluye:
+    • Encabezados legales formales (art. 1725 CCyCN sobre el deber de responder)
+    • Variables delimitadas por corchetes [ ] para personalizar: [NOMBRE_DEUDOR],
+      [MONTO_ADEUDADO], [PLAZO_DE_PAGO], etc.
+    • Cita normativa obligatoria en cada sección aplicable
+    • Tono neutro y profesional
+    Demo: Entrada → "Intimar a Juan Pérez por $150.000 de alquiler impago en 5 días"
+          Salida → Carta documento completa y formateada
+
+  ◉ GEM 2: SIMPLIFICADOR DE LENGUAJE LEGAL
+    Rol: Traducir sentencias complejas a viñetas claras para WhatsApp.
+    System Prompt incluye:
+    • Máximo 5 viñetas por documento
+    • Lenguaje en primera persona del cliente
+    • Sin terminología técnica sin explicar
+    • Incluir siempre: qué pasa, qué se decide, qué debe hacer el cliente
+    Demo: Entrada → Sentencia de 3 páginas con lenguaje jurídico técnico
+          Salida → 5 viñetas claras en lenguaje coloquial
+
+  ◉ GEM 3: AUDITOR DE VICIOS CONTRACTUALES
+    Rol: Escanear contratos buscando cláusulas abusivas o desequilibrios.
+    System Prompt incluye:
+    • Buscar cláusulas leoninas (art. 988 CCyCN)
+    • Detectar asimetrías de información o poder
+    • Señalar plazos de caducidad excesivamente cortos
+    • Marcar limitaciones de responsabilidad unilaterales
+    Demo: Entrada → Contrato de adhesión de servicios digitales
+          Salida → Lista de cláusulas problemáticas con artículo legal aplicable
+
+REFLEXIÓN CLAVE:
+  "No le estamos pidiendo a la IA que sea el abogado. Le estamos pidiendo
+  que haga el primer borrador mecánico. El abogado revisa, ajusta, firma
+  y asume la responsabilidad. Eso es Human-in-the-Loop."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P4 — NOTEBOOKLM: LA CARPETA DIGITAL DEL CASO
+Sección: Práctica: NotebookLM
+Referencia: Módulo 4 de la Guía de Capacitación Jurídica
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Panel izquierdo: "Expediente_Gomez_Amparo.nb" con 3 fuentes cargadas
+  • Panel derecho: Consultas predefinidas y respuestas con citas de fuentes [1][2]
+  • Al hacer clic en las citas, se ilumina la fuente correspondiente en el panel
+
+QUÉ ES NOTEBOOKLM — DEFINICIÓN:
+  "NotebookLM es una herramienta de Google que utiliza tecnología RAG
+  (Generación Aumentada por Recuperación). Esta arquitectura obliga al modelo
+  a responder ÚNICAMENTE en base a los documentos que tú le proporcionas."
+
+  "Es como si le preguntaras a la IA: 'Basándote SOLO en estos archivos,
+  respondeme.' Si no está en los archivos, te dice que no lo encontró.
+  Elimina las alucinaciones normativas o la invención de fallos judiciales."
+
+FUENTES DEL CASO DE EJEMPLO:
+  1. Demanda_Amparo_Fls_1_25.pdf (texto legal)
+  2. Audio_Declaracion_Testigo_B.mp3 (testimonio de audio)
+  3. Ley_Previsional_Caja_Salta.pdf (normativa aplicable)
+
+CONSULTAS JURÍDICAS DE EJEMPLO:
+  "¿Existen contradicciones entre los testigos y la demanda?"
+  → La IA busca en los 3 documentos y cita con numeritos [1][2] exactamente
+    de qué fuente extrajo cada dato.
+
+  "Generar cronología procesal con fechas clave del amparo."
+  → La IA genera una línea de tiempo basada SOLO en lo que dice la demanda,
+    no inventa fechas.
+
+DIFERENCIA RAG vs CHAT NORMAL — QUÉ DECIR:
+  "Si le preguntas a ChatGPT por un fallo de la Corte Suprema de Salta de
+  2019, puede inventarse uno con detalles convincentes que no existe. Se llama
+  'alucinación' y es el mayor riesgo en el ámbito legal."
+
+  "NotebookLM no puede alucinar sobre tus fuentes porque literalmente
+  solo accede a esas fuentes. Si el fallo no está en los PDFs que subiste,
+  te dice: 'No se encuentra en los documentos proporcionados.'"
+
+CAPACIDAD:
+  "Permite cargar hasta 600 documentos por carpeta (cuaderno). Un expediente
+  completo con todos sus tomos, pruebas, audiencias grabadas, normativa
+  aplicable y jurisprudencia — todo en una sola carpeta inteligente."
+
+
+════════════════════════════════════════════════════════════════════════════════
+SLIDE P5 — SÍNTESIS Y PRINCIPIO ÉTICO: HUMAN-IN-THE-LOOP
+Sección: Práctica: Síntesis
+Referencia: Módulo 5 de la Guía de Capacitación Jurídica
+════════════════════════════════════════════════════════════════════════════════
+
+QUÉ MUESTRA:
+  • Tabla comparativa Gems vs NotebookLM
+  • Panel de alerta roja con el principio ético institucional obligatorio
+
+TABLA COMPARATIVA GEMS vs NOTEBOOKLM:
+
+  Criterio              │  Google Gems (Gemini)            │  NotebookLM
+  ──────────────────────│──────────────────────────────────│────────────────────────
+  Enfoque Primario      │  El CÓMO (métodos, estilo, tono) │  El QUÉ (expediente
+                        │                                  │  específico o causa)
+  Fuentes de info       │  Prompt + contexto general       │  Carga de hasta 600
+                        │  + extensiones de Workspace      │  documentos directos
+  Control de            │  Depende del diseño del prompt   │  ESTRICTO (RAG): solo
+  Alucinación           │                                  │  responde con fuentes
+  Analogía Jurídica     │  Manual de Procedimientos del    │  La carpeta física del
+                        │  Estudio / Especialización       │  caso o expediente
+
+CUÁNDO USAR CADA UNO:
+  Gems → "Tengo una tarea tipo que hago todos los días (redactar intimaciones,
+  simplificar sentencias, revisar contratos). Necesito que la IA sepa
+  exactamente cómo hacerlo sin que yo se lo explique cada vez."
+
+  NotebookLM → "Tengo un caso específico con muchos documentos y necesito
+  hacer preguntas sobre ese caso concreto con total seguridad jurídica.
+  No quiero que me invente nada."
+
+EL PRINCIPIO ÉTICO — LEERLO EN VOZ ALTA:
+  "La Inteligencia Artificial opera ÚNICAMENTE como un copiloto de
+  eficiencia y análisis de datos. La responsabilidad profesional, el criterio
+  normativo y la validación final del escrito recaen de forma INDELEGABLE
+  en el abogado o profesional matriculado. Ningún borrador generado por IA
+  debe presentarse ante estrados sin revisión rigurosa previa."
+
+CIERRE FINAL DEL MÓDULO:
+  "La IA propone. El abogado matriculado audita, ajusta y firma."
+
+  "El criterio normativo no es matemático. Exige ponderación de valores,
+  estrategia judicial, lectura del juez, conocimiento local del procedimiento.
+  Eso es exactamente lo que las máquinas no poseen y los profesionales sí."
+
+  "Usen la IA para ganar tiempo. Inviertan ese tiempo en lo que solo ustedes
+  pueden hacer: pensar, estrategizar y representar a sus clientes."
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          RESUMEN EJECUTIVO DE LA CHARLA
+            (Para repasar antes de salir a exponer — 2 minutos de lectura)
+════════════════════════════════════════════════════════════════════════════════
+
+ESTRUCTURA GENERAL DE LA PRESENTACIÓN:
+  1. APERTURA: Qué es la IA y cómo está estructurado su ecosistema
+  2. CÓMO FUNCIONA: Redes neuronales, datos, diferencias con analytics
+  3. HISTORIA: 70 años de evolución hasta ChatGPT y los agentes
+  4. EL PROBLEMA: Shadow AI y el caos organizacional por falta de políticas
+  5. EL FRACASO: Samsung y qué pasa cuando no hay política (análisis legal)
+  6. EL ÉXITO: JP Morgan y cómo se pasa de prohibir a gobernar
+  7. LA DECISIÓN: 3 políticas posibles (no hacer nada / híbrido / prohibir todo)
+  8. LA LEY: EU AI Act y el marco regulatorio global
+  9. CASOS REALES: Walmart, Amazon, AB InBev, Seguros (la IA en acción)
+  10. CIERRE CONCEPTUAL: La IA como el nuevo Excel, mentalidad de crecimiento
+  11. MÓDULO PRÁCTICO: Tokens, Multimodalidad, Gems, NotebookLM y ética
+
+MENSAJE ÚNICO QUE DEBE QUEDARSE EN LA AUDIENCIA:
+  "La IA no desaparecerá. Ya está en sus organizaciones aunque no la hayan
+  aprobado. La pregunta no es si usarla, sino cómo gobernarla de forma
+  inteligente, segura y con responsabilidad profesional."
+
+FRASES CLAVE PARA RECORDAR:
+  • "La IA no es magia. Son multiplicaciones y sumas a escala colosal."
+  • "Garbage in, garbage out. Sin buenos datos, no hay buena IA."
+  • "Shadow AI ya está en tu empresa. La pregunta es si quieres controlarlo."
+  • "Prohibir no es una estrategia. Es una pausa con fecha de vencimiento."
+  • "La IA propone. El profesional matriculado audita y firma."
+  • "Los profesionales que usen IA reemplazarán a los que no la usen."
+
+================================================================================
+                         FIN DEL DOCUMENTO DE NOTAS
+             Presentación: "IA: Desarrollar una Mentalidad de Crecimiento"
+                           Expositor: Octavio Galván
+================================================================================
