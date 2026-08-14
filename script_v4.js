@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTokensWidget();
     initMultimodalWidget();
     initExtensionsWidget();
+    initGeminiToolsWidget();
     initGemsWidget();
     initNotebookLMWidget();
     initGmailWidget();
@@ -1676,5 +1677,30 @@ function initExtensionsWidget() {
     // Init state
     showExtension('gmail');
 }
+
+// --- Slide P2.7: Gemini Tools Widget ---
+function initGeminiToolsWidget() {
+    const cards = document.querySelectorAll('.tool-selector-card');
+    const previews = document.querySelectorAll('.tool-preview-content');
+    
+    if (cards.length === 0) return;
+    
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            cards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+            
+            const toolId = card.getAttribute('data-tool');
+            
+            previews.forEach(p => {
+                p.classList.remove('active');
+                if (p.id === `preview-${toolId}`) {
+                    p.classList.add('active');
+                }
+            });
+        });
+    });
+}
+
 
 
