@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMultimodalWidget();
     initGemsWidget();
     initNotebookLMWidget();
+    initGmailWidget();
     
     // Menú hamburguesa móvil
     initMobileMenu();
@@ -1605,3 +1606,30 @@ function initNotebookLMWidget() {
     // Init state
     executeQuery(queries[0]);
 }
+
+// --- Slide P4.5: Gmail Assistant ---
+function initGmailWidget() {
+    const presets = document.querySelectorAll('.btn-gmail-preset');
+    const imgSinIa = document.getElementById('gmail-img-sin-ia');
+    const imgConIa = document.getElementById('gmail-img-con-ia');
+    
+    if (presets.length === 0) return;
+    
+    presets.forEach(btn => {
+        btn.addEventListener('click', () => {
+            presets.forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const target = btn.getAttribute('data-img');
+            
+            if (target === 'sin-ia') {
+                imgSinIa?.classList.add('active');
+                imgConIa?.classList.remove('active');
+            } else {
+                imgSinIa?.classList.remove('active');
+                imgConIa?.classList.add('active');
+            }
+        });
+    });
+}
+
