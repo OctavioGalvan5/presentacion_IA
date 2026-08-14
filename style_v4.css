@@ -3221,22 +3221,22 @@ main {
     .pyramid-tier  { font-size: 0.72rem; padding: 8px; }
 
     /* --- Círculos anidados --- */
-    .circles-visual { height: 240px; width: 100%; }
+    .circles-visual { flex: none; height: 240px; width: 100%; }
     .circle-cs    { width: 220px; height: 220px; font-size: 0.68rem; left: calc(50% - 110px); top: 10px; }
     .circle-ai    { width: 172px; height: 172px; font-size: 0.65rem; left: calc(50% - 86px); top: 34px; }
     .circle-ml    { width: 128px; height: 128px; font-size: 0.6rem; left: calc(50% - 64px); top: 56px; }
     .circle-dl    { width: 88px;  height: 88px;  font-size: 0.55rem; left: calc(50% - 44px); top: 76px; }
     .circle-genai { width: 50px; height: 50px; font-size: 0.48rem; left: calc(50% - 25px); top: 95px; padding-top: 0; }
-    .circles-detail-panel { font-size: 0.78rem; padding: 14px; min-height: auto; width: 100%; }
+    .circles-detail-panel { flex: none; font-size: 0.78rem; padding: 14px; min-height: auto; width: 100%; }
 
     /* --- Venn MAD --- */
-    .venn-visual  { height: 240px; width: 100%; }
+    .venn-visual  { flex: none; height: 240px; width: 100%; }
     .venn-circle  { width: 120px; height: 120px; font-size: 0.75rem; }
     .venn-data    { top: 25px; left: calc(50% - 85px); }
     .venn-ml      { top: 25px; right: calc(50% - 85px); }
     .venn-ai      { bottom: 25px; left: calc(50% - 60px); }
     .venn-mad-center { top: calc(50% - 32px); left: calc(50% - 23px); width: 46px; height: 46px; font-size: 0.72rem; }
-    .mad-detail-panel { width: 100%; }
+    .mad-detail-panel { flex: none; width: 100%; }
 
     /* --- Línea de tiempo --- */
     .timeline-container {
