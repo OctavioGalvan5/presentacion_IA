@@ -1428,7 +1428,7 @@ function initTokensWidget() {
         if (label) label.textContent = name;
         if (display) display.textContent = `~${count.toLocaleString('es-AR')} tokens`;
         
-        // Gemini 1.5 Pro has 2,000,000 max. Calculate percentage.
+        // Gemini 3.5 Pro has 2,000,000 max. Calculate percentage.
         // We add a min-width of 1% so the bar is always visible, and max of 100%
         let pct = (count / 2000000) * 100;
         if (pct < 1) pct = 1.2; // min visual representation
