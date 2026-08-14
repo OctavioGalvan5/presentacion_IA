@@ -3149,6 +3149,7 @@ main {
     .header-meta { gap: 6px; }
     .btn-notes-toggle { display: none; }
     .slide-section-indicator { font-size: 0.65rem; padding: 3px 8px; }
+    .mobile-nav-drawer { top: 52px; }
 
     /* --- Layout principal --- */
     main { padding-top: 58px; }
@@ -3202,7 +3203,11 @@ main {
 
     /* --- Venn MAD --- */
     .venn-visual  { height: 240px; }
-    .venn-circle  { width: 120px; height: 120px; font-size: 0.78rem; }
+    .venn-circle  { width: 120px; height: 120px; font-size: 0.75rem; }
+    .venn-data    { top: 25px; left: calc(50% - 85px); }
+    .venn-ml      { top: 25px; right: calc(50% - 85px); }
+    .venn-ai      { bottom: 25px; left: calc(50% - 60px); }
+    .venn-mad-center { top: calc(50% - 32px); left: calc(50% - 23px); width: 46px; height: 46px; font-size: 0.72rem; }
 
     /* --- Línea de tiempo --- */
     .timeline-container {
@@ -3228,6 +3233,7 @@ main {
     .usecase-card  { padding: 14px; }
 
     /* --- Red neuronal --- */
+    .nn-simulator { width: 100%; }
     .nn-math-panel { flex: none; width: 100%; }
     .nn-explain-grid { grid-template-columns: 1fr !important; }
 
