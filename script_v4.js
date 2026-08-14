@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Widgets del Módulo Práctico Jurídico
     initTokensWidget();
     initMultimodalWidget();
+    initExtensionsWidget();
     initGemsWidget();
     initNotebookLMWidget();
     initGmailWidget();
@@ -1632,4 +1633,48 @@ function initGmailWidget() {
         });
     });
 }
+
+// --- Slide P2.5: Gemini Extensions ---
+const extensionsData = {
+    gmail: {
+        input: `<strong>@Gmail</strong> busca los últimos mails sobre el amparo de Gómez y resumí el conflicto principal`,
+        output: `Buscando en tus correos electrónicos de Gmail...<br><br>Encontré 3 correos electrónicos relevantes:<br>1. <strong>De: Procuración Fiscal</strong> (11/08/2026): Envía cédula digital y advierte sobre el traslado de 5 días.<br>2. <strong>De: Dr. Pérez (Abogado Actor)</strong> (12/08/2026): Adjunta dictamen médico que alega incapacidad permanente desde marzo de 2026.<br>3. <strong>De: Asesoría Previsional Caja</strong> (13/08/2026): Reporta que el afiliado registra aportes por tareas operativas en finca hasta mayo de 2026.<br><br><strong>Conflicto principal:</strong> Contradicción de fechas sobre el cese real de actividades del actor (marzo vs. mayo).`
+    },
+    drive: {
+        input: `<strong>@Google Drive</strong> analizá el archivo 'Demanda_Amparo_Fls_1_25.pdf' y decime el monto reclamado`,
+        output: `Analizando tus archivos en Google Drive...<br><br>He procesado el archivo <strong>Demanda_Amparo_Fls_1_25.pdf</strong>:<br>• <strong>Monto reclamado:</strong> El actor Gómez demanda la suma de $1.250.000 en concepto de haberes previsionales retroactivos e intereses liquidados.<br>• <strong>Plazo de reclamo:</strong> Abarca desde marzo de 2026 a la fecha de inicio del amparo.<br>• <strong>Objeto del amparo:</strong> Medida cautelar para ordenar el pago inmediato del beneficio de retiro por invalidez.`
+    },
+    docs: {
+        input: `<strong>@Google Docs</strong> redactá el borrador inicial de la contestación basándote en la plantilla de amparos`,
+        output: `Buscando plantillas en Google Docs...<br><br>He encontrado el documento 'Plantilla_Contestacion_Amparo.docx' y redacté el siguiente borrador inicial en base a los datos del caso de Gómez:<br><br><em>"SEÑOR JUEZ CIVIL Y COMERCIAL... Contestamos demanda de amparo... Negamos todos y cada uno de los hechos alegados por la actora. Específicamente negamos que la incapacidad reclamada sea absoluta a partir de marzo de 2026, dado que el actor registra tareas activas hasta mayo de 2026..."</em><br><br>El documento preliminar fue creado y guardado en tu Drive como <strong>'Borrador_Contestacion_Gomez.docx'</strong>.`
+    }
+};
+
+function initExtensionsWidget() {
+    const cards = document.querySelectorAll('.extension-card');
+    const userInput = document.getElementById('ext-chat-user-input');
+    const aiOutput = document.getElementById('ext-chat-ai-output');
+    
+    if (cards.length === 0) return;
+    
+    function showExtension(appId) {
+        cards.forEach(c => c.classList.remove('active'));
+        const activeCard = Array.from(cards).find(c => c.getAttribute('data-app') === appId);
+        if (activeCard) activeCard.classList.add('active');
+        
+        const data = extensionsData[appId];
+        if (userInput) userInput.innerHTML = data.input;
+        if (aiOutput) aiOutput.innerHTML = data.output;
+    }
+    
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            showExtension(card.getAttribute('data-app'));
+        });
+    });
+    
+    // Init state
+    showExtension('gmail');
+}
+
 

@@ -1165,6 +1165,80 @@
         </section>
 
         <!-- ==========================================
+             SLIDE P2.5: INTEGRACIÓN EXTENSIONES DE GEMINI (@)
+             ========================================== -->
+        <section class="slide" id="slide-extensions" data-section="Práctica: Ecosistema" data-source-slide="Módulo 2.5 — Conectividad: Extensiones de Gemini (@ Workspace)">
+            <div class="slide-header">
+                <div class="slide-title-wrapper">
+                    <span class="slide-tag">Práctica: Ecosistema</span>
+                    <h2 class="slide-title">Ecosistema Gemini: <span>Extensiones con @</span></h2>
+                </div>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); max-width: 850px;">
+                    Gemini no funciona aislado. Utilizando el comando <strong>@</strong>, podés conectar el chat directamente con tus aplicaciones de Google Workspace en tiempo real para buscar correos, leer archivos de tu nube o redactar documentos.
+                </p>
+                
+                <div class="extensions-widget">
+                    <!-- Selector de Apps -->
+                    <div class="extensions-apps-panel">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">Seleccionar Extensión (@):</span>
+                        <div class="extension-cards-list">
+                            <div class="extension-card active" data-app="gmail">
+                                <div class="ext-icon-wrapper gmail"><i data-lucide="mail" style="width: 18px; height: 18px;"></i></div>
+                                <div class="ext-info">
+                                    <span class="ext-name">@Gmail</span>
+                                    <span class="ext-desc">Buscar y resumir correos</span>
+                                </div>
+                            </div>
+                            <div class="extension-card" data-app="drive">
+                                <div class="ext-icon-wrapper drive"><i data-lucide="hard-drive" style="width: 18px; height: 18px;"></i></div>
+                                <div class="ext-info">
+                                    <span class="ext-name">@Google Drive</span>
+                                    <span class="ext-desc">Analizar documentos en tu nube</span>
+                                </div>
+                            </div>
+                            <div class="extension-card" data-app="docs">
+                                <div class="ext-icon-wrapper docs"><i data-lucide="file-text" style="width: 18px; height: 18px;"></i></div>
+                                <div class="ext-info">
+                                    <span class="ext-name">@Google Docs</span>
+                                    <span class="ext-desc">Crear o consultar archivos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Simulación de Chat de la Extensión -->
+                    <div class="extensions-chat-panel">
+                        <div class="ext-chat-input-wrapper">
+                            <span class="ext-input-user">Tú:</span>
+                            <div class="ext-input-box" id="ext-chat-user-input">
+                                <!-- JS cargará el prompt con @ -->
+                            </div>
+                        </div>
+                        
+                        <div class="ext-chat-output-wrapper">
+                            <span class="ext-output-ai">Gemini:</span>
+                            <div class="ext-output-box" id="ext-chat-ai-output">
+                                <!-- JS cargará la respuesta simulada -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-notes-data">
+                <p><strong>Uso de Extensiones en Workspace:</strong></p>
+                <ul>
+                    <li>Explica cómo Gemini se convierte en un asistente real del orador al integrar sus herramientas cotidianas.</li>
+                    <li>Muestra el comando `@`: es el puente que rompe el límite de tener que copiar y pegar texto.</li>
+                    <li><strong>@Gmail:</strong> Para buscar notificaciones o comunicaciones clave sin abrir Outlook/Gmail en otra pestaña.</li>
+                    <li><strong>@Google Drive y Docs:</strong> Para alimentar a Gemini directamente con archivos pesados cargados en la nube institucional de la Caja de Salta.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
              SLIDE P3: LAS GEMS PERSONALIZADAS
              ========================================== -->
         <section class="slide" id="slide-gems" data-section="Práctica: Gems" data-source-slide="Módulo 3 — Las Gems Jurídicas Especializadas">

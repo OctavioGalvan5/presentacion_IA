@@ -3067,6 +3067,144 @@ main {
     background: rgba(0, 102, 254, 0.02);
 }
 
+/* Extensions Widget (@) */
+.extensions-widget {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.extensions-apps-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.extension-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.extension-card {
+    background: white;
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    cursor: pointer;
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.extension-card:hover, .extension-card.active {
+    border-color: var(--accent-blue);
+    background: rgba(0, 102, 254, 0.02);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 102, 254, 0.08);
+}
+
+.extension-card.active {
+    border-color: var(--accent-blue);
+    background: linear-gradient(to right, rgba(0, 102, 254, 0.05), white);
+}
+
+.ext-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ext-icon-wrapper.gmail { background: #ea4335; }
+.ext-icon-wrapper.drive { background: #34a853; }
+.ext-icon-wrapper.docs { background: #4285f4; }
+
+.ext-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ext-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.ext-desc {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.extensions-chat-panel {
+    flex: 1.3;
+    background: white;
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--glass-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ext-chat-input-wrapper, .ext-chat-output-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ext-input-user {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+}
+
+.ext-output-ai {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+    text-transform: uppercase;
+}
+
+.ext-input-box {
+    background: #fafafb;
+    border: 1px solid #f2f4f7;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.ext-input-box strong {
+    color: var(--accent-blue);
+}
+
+.ext-output-box {
+    background: rgba(114, 9, 183, 0.03);
+    border: 1px dashed rgba(114, 9, 183, 0.15);
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 /* Gmail Assistant Widget */
 .gmail-assistant-widget {
     display: flex;
@@ -3448,6 +3586,13 @@ main {
     /* --- Comparación --- */
     .comparison-cards { flex-direction: column; }
     .comparison-card  { padding: 14px; }
+
+    /* --- Extensions --- */
+    .extensions-widget { flex-direction: column; gap: 15px; }
+    .extensions-apps-panel { flex: none; width: 100%; }
+    .extension-cards-list { flex-direction: row; flex-wrap: wrap; gap: 8px; }
+    .extension-card { flex: 1 1 calc(50% - 4px); padding: 10px 14px; }
+    .extensions-chat-panel { flex: none; width: 100%; padding: 16px; }
 
     /* --- Gmail Assistant --- */
     .gmail-assistant-widget { flex-direction: column; gap: 15px; }
