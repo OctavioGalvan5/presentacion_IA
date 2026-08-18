@@ -443,17 +443,6 @@ function initIndexMenu() {
 
 // --- Slide 1: Portada y Bios ---
 function initCoverSlide() {
-    const bioCards = document.querySelectorAll('.bio-card');
-    bioCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const role = card.getAttribute('data-role');
-            if (role === 'fredi') {
-                alert("Fredi Vivas: Ingeniero en Sistemas, Profesor de Inteligencia Artificial en UdeSA, Fundador de RockingData y autor del Best Seller 'Cómo piensan las máquinas'. Es un divulgador y formador clave en la región.");
-            } else {
-                alert("Octavio Galván: Abogado especializado en Derecho Digital e Integración Tecnológica. Experto en mitigar riesgos legales, propiedad intelectual y gobernanza corporativa en la implementación de IA.");
-            }
-        });
-    });
 }
 
 // --- Slide 2: Ecosistema Pirámide ---
